@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 1140px;
+}
+
+
+.sidebar {
+  width: 30%;
+  z-index: 9999;
+  position: fixed;
+  height: 100vh;
+  background-color: yellow;
+  left: 0;
+  top: 0;
+}
+
+
+nav {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  max-width: 300px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+aside {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 9999;
+  top: 0;
+  height: 100vh;
+  background-color: orange;
+  position: fixed;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: red;
+}
+
+.guide-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.content-area {
+
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:0 40px;
+}
+
+
+
+@media screen and (max-width: 1584px) {
+
+
+  .content-area {
+    padding-left: 80px;
+  }
+
+}
+
+@media screen and (max-width: 1453px) {
+
+
+  .content-area {
+    padding-left: 120px;
+  }
+
+}
+
+
+@media screen and (max-width: 1389px) {
+
+
+  .content-area {
+    padding-left: 140px;
+  }
+
+}
+
+
+@media screen and (max-width: 1352px) {
+
+
+  .content-area {
+    padding-left: 180px;
+  }
+
+}
+
+@media screen and (max-width: 1262px) {
+
+
+  .content-area {
+    padding-left: 220px;
+  }
+
+}
+
+
+@media screen and (max-width: 1181px) {
+
+
+  .content-area {
+    padding-left: 260px;
+  }
+
+}
+
+
+@media screen and (max-width: 1100px) {
+
+
+  .content-area {
+    padding-left: 260px;
+  }
+
+}
+
+
+@media screen and (max-width: 1080px) {
+
+
+  .content-area {
+    padding-left: 300px;
+  }
+
+}
