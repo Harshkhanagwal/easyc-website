@@ -75,6 +75,12 @@ li{
   margin-bottom: 6px;
 }
 
+.highlight{
+  padding: 0 6px;
+  background-color: rgb(255, 175, 175);
+  color: rgb(179, 4, 4);
+  border-radius: 5px;
+}
 hr {
   opacity: 0.3;
   margin: 20px 0;
