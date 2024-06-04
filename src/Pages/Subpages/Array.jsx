@@ -4,8 +4,8 @@ import Highlight from '../../Components/highlight/Highlight';
 
 const Array = () => {
 
-    const length = `
-#include <stdio.h>
+const length = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -17,17 +17,15 @@ int main() {
     printf("%d", size);
     return 0;
     
-}
-    `;
+}`;
 
-    const array_ex = `
-// example : 
+const array_ex = 
+`// example : 
 // printArr_int(arr, sizeOfarray)
-    
-    `;
+`;
 
-    const length_char = `
-#include <stdio.h>
+const length_char = 
+`#include <stdio.h>
 //alawys use while working with characters or strings
 #include <string.h>
 
@@ -43,14 +41,11 @@ int main() {
     
     return 0;
     
-}
-    `;
+}`;
 
-    const printArr_int = `
-// example : 
-// insertAtBeginning_int(arr, &sizeOfarray, value_to_be_added)
-    
-    `;
+const printArr_int = 
+`// example : 
+// insertAtBeginning_int(arr, &sizeOfarray, value_to_be_added)`;
 
     const length_int= `
 #include <stdio.h>
@@ -74,13 +69,12 @@ int main() {
 }   
     `;
 
-    const character_array = `
-// example : 
-// insertAtEnd_char(character_array,  character_to_be_added)
-    `;
+const character_array = 
+`// example : 
+// insertAtEnd_char(character_array,  character_to_be_added)`;
 
-    const insertAtBeginning_char = `
-#include <stdio.h>
+const insertAtBeginning_char = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -97,47 +91,39 @@ int main() {
     
     return 0;
     
-}
+}`;
+
+const insertAtEnd_ex = 
+`// example : 
+// insertAtEnd_int(arr, &sizeOfarray, value_to_be_added)`;
+
+ const insertAtEnd_int = 
+`#include <stdio.h>
+//must include easyc.h file
+#include <easyC.h>
     
-    `;
-
-    const insertAtEnd_ex = `
-// example : 
-// insertAtEnd_int(arr, &sizeOfarray, value_to_be_added)
-
-    `;
-
-    const insertAtEnd_int = `
-    #include <stdio.h>
-    //must include easyc.h file
-    #include <easyC.h>
-    
-    int main() {
+int main() {
        
-        int arr[] = {1,2,3,4,5};
-        int size =  length_int(arr);
+    int arr[] = {1,2,3,4,5};
+    int size =  length_int(arr);
        
-        int value = 6;
+    int value = 6;
         
-        //this function also update the value of size variable with current size or length of array
-        insertAtEnd_int(arr, size, value);
+    //this function also update the value of size variable with current size or length of array
+    insertAtEnd_int(arr, size, value);
         
-        //easyc print function 
-        printArr_int(arr, size);
-        return 0;
+    //easyc print function 
+    printArr_int(arr, size);
+    return 0;
         
-    }
-    
-    
-    `;
+}`;
 
-    const end_char_ex = `
-// example : 
-// insertAtEnd_char(&address_of_character_array,  character_to_be_added)
-    `;
+const end_char_ex = 
+`// example : 
+// insertAtEnd_char(&address_of_character_array,  character_to_be_added)`;
 
-    const chrr = `
-#include <stdio.h>
+const chrr = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -154,18 +140,15 @@ int main() {
     
     return 0;
     
-}
-    `;
+}`;
 
 
-    const index_ex = `
-// example : 
-// insertAtEnd_int(&arr, &sizeOfarray, value_to_be_added, index_where_to_add_value)
-    
-    `;
+const index_ex = 
+`// example : 
+// insertAtEnd_int(&arr, &sizeOfarray, value_to_be_added, index_where_to_add_value)`;
 
-    const insertAtIndex_int = `
-#include <stdio.h>
+    const insertAtIndex_int = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -183,17 +166,14 @@ int main() {
     printArr_int(arr, size);
     return 0;
     
-}
+}`;
 
-    `;
+    const char_ex = 
+`// example : 
+// insertAtEnd_char(&address_of_character_array,  character_to_be_added)`;
 
-    const char_ex = `
-// example : 
-// insertAtEnd_char(&address_of_character_array,  character_to_be_added)
-    `;
-
-    const end_char = `
-#include <stdio.h>
+const end_char = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -210,16 +190,14 @@ int main() {
     
     return 0;
     
-}
-    `;
+}`;
 
-    const delete_ex = `
-// example : 
-// deleteFromBeginning_int(arr, &sizeOfarray)
-    `;
+const delete_ex = 
+`// example : 
+// deleteFromBeginning_int(arr, &sizeOfarray)`;
 
-    const deleteFromBeginning_int = `
-#include <stdio.h>
+const deleteFromBeginning_int = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -227,8 +205,7 @@ int main() {
    
     int arr[] = {1,2,3,4,5};
     int size =  length_int(arr);
-   
-    
+       
     //this function also update the value of size variable with current size or length of array
     deleteFromBeginning_int(arr, &size);
     
@@ -236,18 +213,14 @@ int main() {
     printArr_int(arr, size);
     return 0;
     
-}
+}`;
 
-    `;
+const delete_char_ex = 
+`// example : 
+// deleteFromBeginning_char(&character_array)`;
 
-    const delete_char_ex = `
-// example : 
-// deleteFromBeginning_char(&character_array)
-
-    `;
-
-    const deleteFromBeginning_char = `
-#include <stdio.h>
+const deleteFromBeginning_char = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -263,12 +236,10 @@ int main() {
     
     return 0;
     
-}
-    
-    `;
+}`;
 
-    const deleteFromEnd_int = `
- #include <stdio.h>
+const deleteFromEnd_int = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -284,11 +255,10 @@ int main() {
     printArr_int(arr, size);
     return 0;
     
-}
-    `;
+}`;
 
-    const deleteFromEnd_char = `
-#include <stdio.h>
+const deleteFromEnd_char = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -302,16 +272,14 @@ int main() {
     
     return 0;
     
-}
-    `;
+}`;
 
-    const del_index_ex = `
-// example : 
-// deleteFromIndex_int(arr, &sizeOfarray, index)
-    `;
+const del_index_ex = 
+`// example : 
+// deleteFromIndex_int(arr, &sizeOfarray, index)`;
 
-    const deleteFromIndex_int = `
-#include <stdio.h>
+const deleteFromIndex_int = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -328,16 +296,14 @@ int main() {
     printArr_int(arr, size);
     return 0;
     
-}
-    `;
+}`;
 
-    const char_arr = `
-// example : 
-// deleteFromBeginning_char(&character_array, index)
-    `;
+const char_arr = 
+`// example : 
+// deleteFromBeginning_char(&character_array, index)`;
 
-    const deleteFromIndex_char = `
-#include <stdio.h>
+const deleteFromIndex_char = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -353,11 +319,10 @@ int main() {
     
     return 0;
     
-}
-    `;
+}`;
 
-    const sort = `
-#include <stdio.h>
+    const sort = 
+`#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -372,8 +337,7 @@ int main() {
     printArr_int(arr, size);
     return 0;
     
-}
-    `;
+}`;
 
     return (
 
@@ -392,17 +356,16 @@ int main() {
 
                     <h2>Table Of Content (Array Operations)</h2>
                     <ul>
-                        <li>length</li>
-                        <li>Print Array</li>
-                        <li>Insertion</li>
-                        <li>Deletion</li>
-                        <li>Sorting</li>
-                        <li>Searching</li>
-                        <li>Reverse Traversal/Print reverse array</li>
+                        <a href="#length"><li>length</li></a>
+                        <a href="#print-array"><li>Print Array</li></a>
+                        <a href="#insertion"><li>Insertion</li></a>
+                        <a href="#deletion"><li>Deletion</li></a>
+                        <a href="#sorting"><li>Sorting</li></a>
+                        <a href="#searching"><li>Searching</li></a>
                     </ul>
                     <hr />
 
-                    <h2>Length</h2>
+                    <h2 id='length'>Length</h2>
                     <p>To find the length of array you have length function for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"length_int()"} /> for int datatype</li>
@@ -417,7 +380,7 @@ int main() {
 
                     <hr />
 
-                    <h2>Print Array</h2>
+                    <h2 id='print-array'>Print Array</h2>
                     <p>To find the  values of array you also have pre build function for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"printArr_int()"} /> for int datatype</li>
@@ -433,7 +396,7 @@ int main() {
                     <Codebx code={length_char} />
                     <hr/>
 
-                    <h2>Insertion </h2>
+                    <h2 id='insertion'>Insertion </h2>
                     <p>You can insert element in array with easyC in three ways: </p>
                     <ul>
                         <li>insert at beginning </li>
@@ -538,7 +501,7 @@ int main() {
                     <Codebx code={end_char} />
                     <hr/>
 
-                    <h2>Deletion</h2>
+                    <h2 id='deletion'>Deletion</h2>
                     <p>You can insert element in array with easyC in three ways: </p>
                     <ul>
                         <li>Deletion from beginning </li>
@@ -627,7 +590,7 @@ int main() {
                         <Codebx code={deleteFromIndex_char} />
                         <hr/>
 
-                        <h2>sorting</h2>
+                        <h2 id='sorting'>sorting</h2>
                         <p>To sort the array you have sort functions for each supported data types:</p>
                         <ul>
                             <li><Highlight value={"sort_int()"} /> for int datatype</li>
@@ -647,7 +610,7 @@ int main() {
                         <Codebx code={sort} />
                         <hr/>
 
-                        <h2>Searching</h2>
+                        <h2 id='searching'>Searching</h2>
                         <p> To search element in array you have Search functions for each supported data types:</p>
                         <ul>
                             <li><Highlight value={"search_int()"} /> for int datatype</li>
