@@ -11,6 +11,7 @@ import Header from './Components/Header/Header';
 import Array from './Pages/Subpages/Array';
 import Queue from './Pages/Subpages/Queue';
 import Stack from './Pages/Subpages/Stack';
+import Linkedlist from './Pages/Subpages/Linkedlist';
 
 const App = () => {
   const { aside, SetAside } = useContext(Globalcontext);
@@ -32,6 +33,7 @@ const App = () => {
             <Route path='/guide/array' element={<Array />} />
             <Route path='/guide/queue' element={<Queue />} />
             <Route path='/guide/Stack' element={<Stack />} />
+            <Route path='/guide/Linkedlist' element={<Linkedlist />} />
             <Route path='/*' element={<h1>ERROR</h1>} />
           </Routes>
           {/*  */}
