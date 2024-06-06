@@ -4,28 +4,28 @@ import Highlight from '../../Components/highlight/Highlight';
 
 const Array = () => {
 
-const length = 
-`#include <stdio.h>
+    const length = 
+    `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
-
-int main() {
-   
-    char name[] = {'J','A','C', 'K'};
-    int size =  length_char(name);
-
-    printf("%d", size);
-    return 0;
     
-}`;
+    int main() {
+       
+        char name[] = {'J','A','C', 'K'};
+        int size =  length_char(name);
+    
+        printf("%d", size);
+        return 0;
+        
+    }`;
 
-const array_ex = 
-`// example : 
+    const array_ex =
+        `// example : 
 // printArr_int(arr, sizeOfarray)
 `;
 
-const length_char = 
-`#include <stdio.h>
+    const length_char =
+        `#include <stdio.h>
 //alawys use while working with characters or strings
 #include <string.h>
 
@@ -43,11 +43,11 @@ int main() {
     
 }`;
 
-const printArr_int = 
-`// example : 
+    const printArr_int =
+        `// example : 
 // insertAtBeginning_int(arr, &sizeOfarray, value_to_be_added)`;
 
-    const length_int= `
+    const length_int = `
 #include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
@@ -69,12 +69,12 @@ int main() {
 }   
     `;
 
-const character_array = 
-`// example : 
+    const character_array =
+        `// example : 
 // insertAtEnd_char(character_array,  character_to_be_added)`;
 
-const insertAtBeginning_char = 
-`#include <stdio.h>
+    const insertAtBeginning_char =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -93,12 +93,12 @@ int main() {
     
 }`;
 
-const insertAtEnd_ex = 
-`// example : 
+    const insertAtEnd_ex =
+        `// example : 
 // insertAtEnd_int(arr, &sizeOfarray, value_to_be_added)`;
 
- const insertAtEnd_int = 
-`#include <stdio.h>
+    const insertAtEnd_int =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
     
@@ -118,12 +118,12 @@ int main() {
         
 }`;
 
-const end_char_ex = 
-`// example : 
+    const end_char_ex =
+        `// example : 
 // insertAtEnd_char(&address_of_character_array,  character_to_be_added)`;
 
-const chrr = 
-`#include <stdio.h>
+    const chrr =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -143,12 +143,12 @@ int main() {
 }`;
 
 
-const index_ex = 
-`// example : 
+    const index_ex =
+        `// example : 
 // insertAtEnd_int(&arr, &sizeOfarray, value_to_be_added, index_where_to_add_value)`;
 
-    const insertAtIndex_int = 
-`#include <stdio.h>
+    const insertAtIndex_int =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -168,12 +168,12 @@ int main() {
     
 }`;
 
-    const char_ex = 
-`// example : 
+    const char_ex =
+        `// example : 
 // insertAtEnd_char(&address_of_character_array,  character_to_be_added)`;
 
-const end_char = 
-`#include <stdio.h>
+    const end_char =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -192,12 +192,12 @@ int main() {
     
 }`;
 
-const delete_ex = 
-`// example : 
+    const delete_ex =
+        `// example : 
 // deleteFromBeginning_int(arr, &sizeOfarray)`;
 
-const deleteFromBeginning_int = 
-`#include <stdio.h>
+    const deleteFromBeginning_int =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -215,12 +215,12 @@ int main() {
     
 }`;
 
-const delete_char_ex = 
-`// example : 
+    const delete_char_ex =
+        `// example : 
 // deleteFromBeginning_char(&character_array)`;
 
-const deleteFromBeginning_char = 
-`#include <stdio.h>
+    const deleteFromBeginning_char =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -238,8 +238,8 @@ int main() {
     
 }`;
 
-const deleteFromEnd_int = 
-`#include <stdio.h>
+    const deleteFromEnd_int =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -257,8 +257,8 @@ int main() {
     
 }`;
 
-const deleteFromEnd_char = 
-`#include <stdio.h>
+    const deleteFromEnd_char =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -274,12 +274,12 @@ int main() {
     
 }`;
 
-const del_index_ex = 
-`// example : 
+    const del_index_ex =
+        `// example : 
 // deleteFromIndex_int(arr, &sizeOfarray, index)`;
 
-const deleteFromIndex_int = 
-`#include <stdio.h>
+    const deleteFromIndex_int =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -298,12 +298,12 @@ int main() {
     
 }`;
 
-const char_arr = 
-`// example : 
+    const char_arr =
+        `// example : 
 // deleteFromBeginning_char(&character_array, index)`;
 
-const deleteFromIndex_char = 
-`#include <stdio.h>
+    const deleteFromIndex_char =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -321,8 +321,8 @@ int main() {
     
 }`;
 
-    const sort = 
-`#include <stdio.h>
+    const sort =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
 
@@ -337,7 +337,29 @@ int main() {
     printArr_int(arr, size);
     return 0;
     
-}`;
+}
+`;
+    const search = `
+#include <stdio.h>
+//must include easyc.h file
+#include <easyC.h>
+
+
+int main() {
+	   
+	  int arr[] = {23, 43, 5, 8, 9};
+	  
+	  //length function is also from easyC
+		int size = length_int(arr);
+    
+    // the search function will return the index of searched value
+    int indexOfSearchedValue = search_int(arr, 5, size);
+    
+    return 0;
+}
+    
+    `;
+
 
     return (
 
@@ -357,7 +379,7 @@ int main() {
                     <h2>Table Of Content (Array Operations)</h2>
                     <ul>
                         <a href="#length"><li>length</li></a>
-                        <a href="#print-array"><li>Print Array</li></a>
+                        printf("Front item is %d\n", front_AR(queue));                        <a href="#print-array"><li>Print Array</li></a>
                         <a href="#insertion"><li>Insertion</li></a>
                         <a href="#deletion"><li>Deletion</li></a>
                         <a href="#sorting"><li>Sorting</li></a>
@@ -391,10 +413,10 @@ int main() {
                     <p>you just have to pass a two argument during function call (1st: array itself , 2nd : length of array)</p>
                     <Codebx code={array_ex} />
                     <p><i>Note: you can use easyC's length function for size of array</i></p>
-                    <br/>
+                    <br />
                     <p>for example :</p>
                     <Codebx code={length_char} />
-                    <hr/>
+                    <hr />
 
                     <h2 id='insertion'>Insertion </h2>
                     <p>You can insert element in array with easyC in three ways: </p>
@@ -403,7 +425,7 @@ int main() {
                         <li>insert at end</li>
                         <li>inset at given index</li>
                     </ul>
-                    <br/>
+                    <br />
 
                     <h3>Insert at beginning</h3>
                     <p>function for each supported data types:</p>
@@ -412,7 +434,7 @@ int main() {
                         <li><Highlight value={"insertAtBeginning_float()"} /> for float datatype</li>
                         <li><Highlight value={"insertAtBeginning_char()"} /> for char datatype</li>
                     </ul>
-                    <br/>
+                    <br />
 
                     <p>for <Highlight value={"int"} /> & <Highlight value={"float"} /> you have to pass three argument  during function call :</p>
                     <ul>
@@ -422,20 +444,20 @@ int main() {
                     </ul>
                     <Codebx code={printArr_int} />
                     <p><i>Note: you can use easyC's length function for size of array</i></p>
-                    <br/>
+                    <br />
                     <p>for example:</p>
                     <Codebx code={length_int} />
-                    <br/>
+                    <br />
                     <p>for <Highlight value={"char"} /> array  you have to pass two argument  during function call:</p>
                     <ul>
                         <li>1st: character array itself</li>
                         <li>2nd : character to be inserted</li>
                     </ul>
                     <Codebx code={character_array} />
-                    <br/>
+                    <br />
                     <p>for example:</p>
                     <Codebx code={insertAtBeginning_char} />
-                    <br/>
+                    <br />
 
                     <h3>Insert at end</h3>
                     <p>function for each supported data types:</p>
@@ -444,7 +466,7 @@ int main() {
                         <li><Highlight value={"insertAtEnd_float()"} /> for float datatype</li>
                         <li><Highlight value={"insertAtEnd_char()"} /> for char datatype</li>
                     </ul>
-                    <br/>
+                    <br />
                     <p>you have to pass three argument  during function call - </p>
                     <ul>
                         <li>1st: array itself </li>
@@ -454,7 +476,7 @@ int main() {
                     <Codebx code={insertAtEnd_ex} />
                     <p>for example:</p>
                     <Codebx code={insertAtEnd_int} />
-                    <br/>
+                    <br />
 
                     <p>for <Highlight value={"char"} /> array  you have to pass two argument  during function call :</p>
                     <ul>
@@ -462,10 +484,10 @@ int main() {
                         <li>2nd : character to be inserted </li>
                     </ul>
                     <Codebx code={end_char_ex} />
-                    <br/>
+                    <br />
                     <p>for example:</p>
                     <Codebx code={chrr} />
-                    <br/>
+                    <br />
 
                     <h3>Insert at given Index</h3>
                     <p>function for each supported data types:</p>
@@ -474,7 +496,7 @@ int main() {
                         <li><Highlight value={"insertAtIndex_float()"} /> for float datatype</li>
                         <li><Highlight value={"insertAtIndex_char"} /> for char datatype</li>
                     </ul>
-                    <br/>
+                    <br />
                     <p>you have to pass four argument  during function call - </p>
                     <ul>
                         <li>1st: address of array (example : <Highlight value={"&arr"} />)</li>
@@ -484,10 +506,10 @@ int main() {
                     </ul>
                     <Codebx code={index_ex} />
                     <p><i>Note: you can use easyC’s length function for size of array</i></p>
-                    <br/>
+                    <br />
                     <p>for example:</p>
                     <Codebx code={insertAtIndex_int} />
-                    <br/>
+                    <br />
 
                     <p>for <Highlight value={"char"} /> array  you have to pass three argument  during function call :</p>
                     <ul>
@@ -496,10 +518,10 @@ int main() {
                         <li>3rd :  index where you want to add value</li>
                     </ul>
                     <Codebx code={char_ex} />
-                    <br/>
+                    <br />
                     <p>for example:</p>
                     <Codebx code={end_char} />
-                    <hr/>
+                    <hr />
 
                     <h2 id='deletion'>Deletion</h2>
                     <p>You can insert element in array with easyC in three ways: </p>
@@ -508,33 +530,33 @@ int main() {
                         <li>Deletion from end</li>
                         <li>Deletion from given index</li>
                     </ul>
-                    <br/>
+                    <br />
 
                     <h3>Deletion from beginning</h3>
                     <p>function for each supported data types:</p>
                     <ul>
-                        <li><Highlight value={"deleteFromBeginning_int()"} /> for int datatype</li><br/>
-                        <li><Highlight value={"deleteFromBeginning_float()"} /> for float datatype</li><br/>
+                        <li><Highlight value={"deleteFromBeginning_int()"} /> for int datatype</li><br />
+                        <li><Highlight value={"deleteFromBeginning_float()"} /> for float datatype</li><br />
                         <li><Highlight value={"deleteFromBeginning_char()"} /> for char datatype</li>
                     </ul>
-                    <br/>
+                    <br />
                     <p>for <Highlight value={"int"} /> & <Highlight value={"float"} /> you have to pass two argument  during function call :</p>
                     <ul>
                         <li>1st: array itself </li>
                         <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the length of variable (example : <Highlight value={"&size"} />)</li>
                     </ul>
                     <Codebx code={delete_ex} />
-                    <p><i>Note: you can use easyC’s length function for size of array</i></p>
-                    <br/>
+                    <p><i>Note: you can use easyC's length function for size of array</i></p>
+                    <br />
                     <p>for example:</p>
                     <Codebx code={deleteFromBeginning_int} />
-                    <br/>
+                    <br />
                     <p>for <Highlight value={"char"} /> array  you just have to pass single argument, address of character array  </p>
                     <Codebx code={delete_char_ex} />
-                    <br/>
+                    <br />
                     <p>for example:</p>
                     <Codebx code={deleteFromBeginning_char} />
-                    <br/>
+                    <br />
 
                     <h3>Deletion from end</h3>
                     <p>function for each supported data types:</p>
@@ -543,17 +565,17 @@ int main() {
                         <li><Highlight value={"deleteFromEnd_float()"} /> for float datatype</li>
                         <li><Highlight value={"deleteFromEnd_char()"} /> for   char datatype</li>
                     </ul>
-                    <br/>
+                    <br />
 
                     <p>to perform Deletion from end you can follow same steps as Deletion from beginning</p>
-                    <br/>
+                    <br />
                     <p>for example:</p>
                     <Codebx code={deleteFromEnd_int} />
-                    <br/>
+                    <br />
 
                     <p>for <Highlight value={"char"} /></p>
                     <Codebx code={deleteFromEnd_char} />
-                    <br/>
+                    <br />
 
                     <h3>Deletion from Index</h3>
                     <p>unction for each supported data types:</p>
@@ -562,68 +584,75 @@ int main() {
                         <li><Highlight value={"deleteFromIndex_float"} /> for float datatype</li>
                         <li><Highlight value={"deleteFromIndex_char"} /> for  char datatype</li>
                     </ul>
-                    <br/>
+                    <br />
 
                     <p>for <Highlight value={"char"} /> & <Highlight value={"float"} /> you have to pass two argument  during function call :</p>
                     <ul>
                         <li>1st: array itself </li>
                         <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the length of variable ( example : <Highlight value={"&size"} />)</li>
                         <li>3rd : index of the position in the array from which you want to delete the value.</li>
-                        </ul>
-                        <Codebx code={del_index_ex} />
-                        <p><i>Note: you can use easyC’s length function for size of array</i></p>
-                        <br/>
+                    </ul>
+                    <Codebx code={del_index_ex} />
+                    <p><i>Note: you can use easyC’s length function for size of array</i></p>
+                    <br />
 
-                        <p>for example:</p>
-                        <Codebx code={deleteFromIndex_int} />
-                        <br/>
+                    <p>for example:</p>
+                    <Codebx code={deleteFromIndex_int} />
+                    <br />
 
-                        <p>for <Highlight value={"char"} /> array  you  have to pass two argument:</p>
-                        <ul>
-                            <li>1st : address of character array  </li>
-                            <li>2nd : index of the position in the array from which you want to delete the value.</li>
-                        </ul>
-                        <Codebx code={char_arr} />
-                        <br/>
+                    <p>for <Highlight value={"char"} /> array  you  have to pass two argument:</p>
+                    <ul>
+                        <li>1st : address of character array  </li>
+                        <li>2nd : index of the position in the array from which you want to delete the value.</li>
+                    </ul>
+                    <Codebx code={char_arr} />
+                    <br />
 
-                        <p>for example:</p>
-                        <Codebx code={deleteFromIndex_char} />
-                        <hr/>
+                    <p>for example:</p>
+                    <Codebx code={deleteFromIndex_char} />
+                    <hr />
 
-                        <h2 id='sorting'>sorting</h2>
-                        <p>To sort the array you have sort functions for each supported data types:</p>
-                        <ul>
-                            <li><Highlight value={"sort_int()"} /> for int datatype</li>
-                            <li><Highlight value={"dort_float()"} /> for float datatype</li>
-                            <li><Highlight value={"sort_char()"} /> for char datatype</li>
-                        </ul>
-                        <br/>
+                    <h2 id='sorting'>sorting</h2>
+                    <p>To sort the array you have sort functions for each supported data types:</p>
+                    <ul>
+                        <li><Highlight value={"sort_int()"} /> for int datatype</li>
+                        <li><Highlight value={"dort_float()"} /> for float datatype</li>
+                        <li><Highlight value={"sort_char()"} /> for char datatype</li>
+                    </ul>
+                    <br />
 
-                        <p>you just have to pass three arguments during function call:</p>
-                        <ul>
-                            <li>1st : array itself</li>
-                            <li>2nd : size of array </li>
-                        </ul>
-                        <br/>
+                    <p>you just have to pass three arguments during function call:</p>
+                    <ul>
+                        <li>1st : array itself</li>
+                        <li>2nd : size of array </li>
+                    </ul>
+                    <br />
 
-                        <p>for example:</p>
-                        <Codebx code={sort} />
-                        <hr/>
+                    <p>for example:</p>
+                    <Codebx code={sort} />
+                    <hr />
 
-                        <h2 id='searching'>Searching</h2>
-                        <p> To search element in array you have Search functions for each supported data types:</p>
-                        <ul>
-                            <li><Highlight value={"search_int()"} /> for int datatype</li>
-                            <li><Highlight value={"search_float()"} /> for float datatype</li>
-                            <li><Highlight value={"search_char"} /> for char datatype</li>
-                        </ul>
+                    <h2 id='searching'>Searching</h2>
+                    <p> To search element in array you have Search functions for each supported data types:</p>
+                    <ul>
+                        <li><Highlight value={"search_int()"} /> for int datatype</li>
+                        <li><Highlight value={"search_float()"} /> for float datatype</li>
+                        <li><Highlight value={"search_char"} /> for char datatype</li>
+                    </ul>
+                    <br />
 
-                        <p></p>
-                        <br/>
+                    <p>You have to pass three arguments during function call:</p>
+                    <ul>
+                        <li>1st : array itself</li>
+                        <li>2nd : value to be searched</li>
+                        <li>3rd : size of array</li>
+                    </ul>
+                    <br/>
 
-                        <p>for example:</p>
-                        {/* <Codebx code={}></Codebx> */}
-                    
+                    <p>for example:</p>
+                    <Codebx code={search}></Codebx>
+                    <p><i>Note: you can use easyC’s length function for size of array</i></p>
+
 
 
 

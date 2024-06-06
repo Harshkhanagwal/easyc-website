@@ -9,6 +9,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Overview from './Pages/Subpages/Overview';
 import Header from './Components/Header/Header';
 import Array from './Pages/Subpages/Array';
+import Queue from './Pages/Subpages/Queue';
+import Stack from './Pages/Subpages/Stack';
 
 const App = () => {
   const { aside, SetAside } = useContext(Globalcontext);
@@ -28,6 +30,8 @@ const App = () => {
             <Route path='/' element={<Home />} />
             <Route path='/guide/overview' element={<Overview />} />
             <Route path='/guide/array' element={<Array />} />
+            <Route path='/guide/queue' element={<Queue />} />
+            <Route path='/guide/Stack' element={<Stack />} />
             <Route path='/*' element={<h1>ERROR</h1>} />
           </Routes>
           {/*  */}
