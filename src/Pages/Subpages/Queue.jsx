@@ -101,12 +101,12 @@ int main() {
 
                     <h2>Table Of content</h2>
                     <ul>
-                        <a href="#Queue-Array_representation"><li>Queue-Array_representation</li></a>
-                        <a href="#Queue-Linked_List_representation"><li>Queue-Linked_List_representation </li></a>
+                        <a href="#Queue_Array_representation"><li>Queue_Array_representation</li></a>
+                        <a href="#Queue_Linked_List_representation"><li>Queue_Linked_List_representation </li></a>
                     </ul>
                     <hr/>
 
-                    <h2 id='Queue-Array_representation'>Queue-Array+representation</h2>
+                    <h2 id='Queue_Array_representation'>Queue_Array+representation</h2>
                     <p>Array-represented queues are simple and have O(1) time complexity for enqueue and dequeue operations but are limited by a fixed size and can be inefficient with space.</p>
                     <br/>
                     <p><b>list of operations</b></p>
@@ -151,12 +151,12 @@ int main() {
                     <Codebx code={queue_ex} /> 
                     <hr/>
 
-                    <h2 id='Queue-Linked_List_representation'>Queue-Linked_List_representation</h2>
+                    <h2 id='Queue_Linked_List_representation'>Queue_Linked_List_representation</h2>
                     <p>Linked list-represented queues are more flexible with dynamic sizing, avoid overflow issues, and efficiently use memory, but they require more complex memory management and have additional overhead per element.</p>
                     <br/>
                     <p><b>list of operations</b></p>
                     <ul>
-                        <a href="#Queue initialization"><li>Queue initialization</li><a/>
+                        <a href="#Queue initialization"><li>Queue initialization</li></a>
                         <a href="#enqueue"><li>enqueue</li></a>
                         <a href="#dequeue"><li>dequeue</li></a>
                         <a href="#front element"><li>front element</li></a>
