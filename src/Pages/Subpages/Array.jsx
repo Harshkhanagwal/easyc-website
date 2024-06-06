@@ -346,13 +346,13 @@ int main() {
 
 int main() {
 	   
-	int arr[] = {23, 43, 5, 8, 9};
+    int arr[] = {23, 43, 5, 8, 9};
 	  
-	//length function is also from easyC
-	int size = length_int(arr);
+    //length function is also from easyC
+    int size = length_int(arr);
     
-        // the search function will return the index of searched value
-        int indexOfSearchedValue = search_int(arr, 5, size);
+    // the search function will return the index of searched value
+    int indexOfSearchedValue = search_int(arr, 5, size);
     
     return 0;
 }

@@ -101,12 +101,12 @@ int main() {
 
                     <h2>Table Of content</h2>
                     <ul>
-                        <a href="#Queue_Array_representation"><li>Queue_Array_representation</li></a>
-                        <a href="#Queue_Linked_List_representation"><li>Queue_Linked_List_representation </li></a>
+                        <a href="#Queue_Array_Representation"><li>Queue_Array_Representation</li></a>
+                        <a href="#Queue_Linked_List_Representation"><li>Queue_Linked_List_Representation </li></a>
                     </ul>
                     <hr/>
 
-                    <h2 id='Queue_Array_representation'>Queue_Array+representation</h2>
+                    <h2 id='Queue_Array_Representation'>Queue Array Representation</h2>
                     <p>Array-represented queues are simple and have O(1) time complexity for enqueue and dequeue operations but are limited by a fixed size and can be inefficient with space.</p>
                     <br/>
                     <p><b>list of operations</b></p>
@@ -151,7 +151,7 @@ int main() {
                     <Codebx code={queue_ex} /> 
                     <hr/>
 
-                    <h2 id='Queue_Linked_List_representation'>Queue_Linked_List_representation</h2>
+                    <h2 id='Queue_Linked_List_Representation'>Queue Linked List Representation</h2>
                     <p>Linked list-represented queues are more flexible with dynamic sizing, avoid overflow issues, and efficiently use memory, but they require more complex memory management and have additional overhead per element.</p>
                     <br/>
                     <p><b>list of operations</b></p>
