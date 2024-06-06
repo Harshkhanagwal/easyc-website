@@ -85,12 +85,12 @@ int main() {
 
                     <h2>Table of content</h2>
                     <ul>
-                        <a href="#Stack_Array_Representation"><li>Stack_Array_Representation</li></a>
-                        <a href="#Stack_Linked_List_Representation"><li>Stack_Linked_List_Representation</li></a>
+                        <a href="#Stack_Array_Representation"><li>Stack-Array Representation</li></a>
+                        <a href="#Stack_Linked_List_Representation"><li>Stack-Linked List Representation</li></a>
                     </ul>
                     <hr />
 
-                    <h2 id='Stack_Array_Representation'>Stack Array Representation</h2>
+                    <h2 id='Stack_Array_Representation'>Stack-Array Representation</h2>
                     <p>An array-based stack uses a fixed-size array to store elements, providing fast access and simple implementation but limited by its fixed capacity, leading to potential overflow and wasted memory if not fully utilized.</p>
                     <br />
                     <p><b>List of Operations</b></p>
@@ -133,7 +133,7 @@ int main() {
                     <Codebx code={Stack_AR} />
                     <hr />
 
-                    <h2 id='Stack_Linked_List_Representation'>Stack Linked list Representation</h2>
+                    <h2 id='Stack_Linked_List_Representation'>Stack-Linked list Representation</h2>
                     <p>In contrast, a linked list-based stack uses dynamic memory allocation, where each element is a node pointing to the next, allowing for flexible size without overflow but with slower access times and additional memory overhead due to the storage of pointers.</p>
                     <br />
                     <p><b>List of Operations</b></p>
