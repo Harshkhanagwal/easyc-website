@@ -71,7 +71,7 @@ const Linkedlist = () => {
             <p><b>Insert at End</b></p>
             <p>you can use <Highlight value={"insertAtEnd_S()"} /> function to insert value at end of linked list</p>
             <p>this function will take two arguments :</p>
-            <Codebx code={nsert_end} />
+            <Codebx code={insert_end} />
             <br/>
 
             <p><b>Insert at Given Index</b></p>
