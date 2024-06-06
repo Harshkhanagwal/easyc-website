@@ -287,7 +287,7 @@ int main() {
    
     int arr[] = {1,2,3,4,5};
     int size =  length_int(arr);
-	int index = 0;
+    int index = 0;
     
     //this function also update the value of size variable with current size or length of array
     deleteFromIndex_int(arr, &size, index);
@@ -313,7 +313,7 @@ int main() {
 int main() {
    
     char chrArr[] = {'a', 'b', 'c', 'd'};
-	int index = 0;
+    int index = 0;
     
     deleteFromIndex_char(&chrArr, index);
     
@@ -344,16 +344,15 @@ int main() {
 //must include easyc.h file
 #include <easyC.h>
 
-
 int main() {
 	   
-	  int arr[] = {23, 43, 5, 8, 9};
+	int arr[] = {23, 43, 5, 8, 9};
 	  
-	  //length function is also from easyC
-		int size = length_int(arr);
+	//length function is also from easyC
+	int size = length_int(arr);
     
-    // the search function will return the index of searched value
-    int indexOfSearchedValue = search_int(arr, 5, size);
+        // the search function will return the index of searched value
+        int indexOfSearchedValue = search_int(arr, 5, size);
     
     return 0;
 }
@@ -379,8 +378,7 @@ int main() {
                     <h2>Table Of Content (Array Operations)</h2>
                     <ul>
                         <a href="#length"><li>length</li></a>
-                        printf("Front item is %d\n", front_AR(queue));                        <a href="#print-array"><li>Print Array</li></a>
-                        <a href="#insertion"><li>Insertion</li></a>
+                         <a href="#insertion"><li>Insertion</li></a>
                         <a href="#deletion"><li>Deletion</li></a>
                         <a href="#sorting"><li>Sorting</li></a>
                         <a href="#searching"><li>Searching</li></a>
