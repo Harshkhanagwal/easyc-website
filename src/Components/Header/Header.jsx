@@ -14,15 +14,18 @@ const Header = () => {
         <div className="innerHeader container">
           <Logo />
 
-          <button onClick={() => setNav(!nav) }className='hamBt'>
-            {nav?<IoCloseSharp />:<RiMenu3Fill />}
+          <button onClick={() => setNav(!nav)} className='hamBt'>
+            <RiMenu3Fill />
           </button>
 
-          <nav className={nav?'show headernav':'headernav'}>
-            <span onClick={() => setNav(!nav) } className='nav-elm'><Link to={'/'}>Home</Link></span>
-            <span onClick={() => setNav(!nav) } className='nav-elm'><Link to={'/guide'}>Guide</Link></span>
-            <span onClick={() => setNav(!nav) } className='nav-elm'><Link to={'/download'}>Download</Link></span>
-            <span onClick={() => setNav(!nav) } className='nav-elm'><Link to={'/about'}>About us</Link></span>
+          <nav className={nav ? 'show headernav' : 'headernav'}>
+            <button onClick={() => setNav(!nav)} className='hamBt navbt'>
+              <IoCloseSharp />
+            </button>
+            <span onClick={() => setNav(!nav)} className='nav-elm'><Link to={'/'}>Home</Link></span>
+            <span onClick={() => setNav(!nav)} className='nav-elm'><Link to={'/guide'}>Guide</Link></span>
+            <span onClick={() => setNav(!nav)} className='nav-elm'><Link to={'/download'}>Download</Link></span>
+            <span onClick={() => setNav(!nav)} className='nav-elm'><Link to={'/about'}>About us</Link></span>
           </nav>
         </div>
       </header>
