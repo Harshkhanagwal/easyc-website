@@ -1,6 +1,8 @@
 import React from 'react';
 import Codebx from '../../Components/Codebx/Codebx'
 import Highlight from '../../Components/highlight/Highlight';
+import Menubar from '../../menubar/Menubar';
+import Aside from '../../Components/Aside/Aside';
 
 
 const Stack = () => {
@@ -18,7 +20,7 @@ const Stack = () => {
     const printStack = `printStack(myStack);`;
 
     const Stack_AR =
-    `#include <stdio.h>
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
    
@@ -76,6 +78,8 @@ int main() {
 
     return (
         <>
+            <Menubar />
+            <Aside />
             <div className="container guide-container">
 
                 <div className="content-area">
@@ -99,7 +103,7 @@ int main() {
                         <a href="#Pop"><li>Pop</li></a>
                         <a href="#Print Stack"><li>Print Stack</li></a>
                         <a href="#Peek"><li>Peek</li></a>
-                    </ul>               
+                    </ul>
                     <br />
 
                     <h3 id='Stack Initialization'>Stack Initialization</h3>

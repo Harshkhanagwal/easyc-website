@@ -51,9 +51,17 @@ html {
   font-family: "Source Code Pro", monospace;
 }
 
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+  color: #646CFF;
+  line-height: 32px;
+}
 h1 {
   font-size: 36px;
   font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 10px;
   /* margin-bottom: 16px; */
 }
 
@@ -99,6 +107,30 @@ hr {
   display: none;
 }
 
+.errorpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.errorpage button{
+  width: 160px;
+  height: 40px;
+  background-color: #646CFF;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.error{
+  max-width: 50%;
+}
+
+.link{
+  text-decoration: none;
+}
 @media screen and (max-width: 1584px) {
 
 
@@ -174,3 +206,43 @@ hr {
   }
 
 }
+@media screen and (max-width: 984px) {
+
+  .main{
+    justify-content: center;
+  }
+  .content-area {
+    padding:40px  10px;
+    max-width: calc(100% - 20px);
+  }
+  .content-area p{
+    font-size: 14px;
+  }
+  aside{
+    left: -300px;
+  }
+  .code-area{
+    padding: 10px 0;
+    scale: 0.9;
+  }
+
+  
+
+}
+
+.tableContainer{
+  overflow-x: scroll;
+  margin: 20px 0;
+  width: 100%;
+}
+
+table{
+  font-size: 14px;
+}
+
+td, th{
+  padding: 6px ;
+  border: 1px solid #67676C;
+  text-wrap: nowrap;
+}
+

@@ -1,6 +1,8 @@
 import React from 'react';
 import Codebx from '../../Components/Codebx/Codebx'
 import Highlight from '../../Components/highlight/Highlight';
+import Menubar from '../../menubar/Menubar';
+import Aside from '../../Components/Aside/Aside';
 
 const Array = () => {
 
@@ -364,6 +366,8 @@ int main() {
 
 
         <>
+         <Menubar />
+         <Aside />
 
             <div className="container guide-container">
 
@@ -533,8 +537,8 @@ int main() {
                     <h3>Deletion from beginning</h3>
                     <p>function for each supported data types:</p>
                     <ul>
-                        <li><Highlight value={"deleteFromBeginning_int()"} /> for int datatype</li><br />
-                        <li><Highlight value={"deleteFromBeginning_float()"} /> for float datatype</li><br />
+                        <li><Highlight value={"deleteFromBeginning_int()"} /> for int datatype</li>
+                        <li><Highlight value={"deleteFromBeginning_float()"} /> for float datatype</li>
                         <li><Highlight value={"deleteFromBeginning_char()"} /> for char datatype</li>
                     </ul>
                     <br />
@@ -555,7 +559,6 @@ int main() {
                     <p>for example:</p>
                     <Codebx code={deleteFromBeginning_char} />
                     <br />
-
                     <h3>Deletion from end</h3>
                     <p>function for each supported data types:</p>
                     <ul>

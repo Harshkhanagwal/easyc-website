@@ -12,9 +12,10 @@ import Array from './Pages/Subpages/Array';
 import Queue from './Pages/Subpages/Queue';
 import Stack from './Pages/Subpages/Stack';
 import Linkedlist from './Pages/Subpages/Linkedlist';
+import NotFound from './Pages/NotFound';
 
 const App = () => {
-  const { aside, SetAside } = useContext(Globalcontext);
+  const { aside } = useContext(Globalcontext);
 
   return (
     <>
@@ -26,15 +27,15 @@ const App = () => {
 
         <div className="main">
 
-          <Aside state={aside} />
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/guide/' element={<Overview />} />
             <Route path='/guide/overview' element={<Overview />} />
             <Route path='/guide/array' element={<Array />} />
             <Route path='/guide/queue' element={<Queue />} />
             <Route path='/guide/Stack' element={<Stack />} />
             <Route path='/guide/Linkedlist' element={<Linkedlist />} />
-            <Route path='/*' element={<h1>ERROR</h1>} />
+            <Route path='/*' element={<NotFound />} />
           </Routes>
           {/*  */}
         </div>

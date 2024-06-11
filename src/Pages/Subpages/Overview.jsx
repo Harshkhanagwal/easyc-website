@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Calloutbx from '../../Components/Callout/Calloutbx'
+import { Globalcontext } from '../../Context/Context';
+import Menubar from '../../menubar/Menubar';
+import Aside from '../../Components/Aside/Aside';
+
 const Overview = () => {
+
+
     return (
         <>
-
+            <Menubar />
+            <Aside />
             <div className="container guide-container">
 
                 <div className="content-area">
 
                     <h1>Overview of EasyC</h1>
-                    <hr />
 
                     <h2>Introduction</h2>
                     <p>

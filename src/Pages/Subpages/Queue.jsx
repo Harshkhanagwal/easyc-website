@@ -1,6 +1,8 @@
 import React from 'react'
 import Codebx from '../../Components/Codebx/Codebx'
 import Highlight from '../../Components/highlight/Highlight';
+import Menubar from '../../menubar/Menubar';
+import Aside from '../../Components/Aside/Aside';
 
 
 const Queue = () => {
@@ -92,6 +94,8 @@ int main() {
 
     return (
         <>
+         <Menubar />
+         <Aside />
             <div className="container guide-container">
 
                 <div className="content-area">
