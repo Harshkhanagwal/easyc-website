@@ -377,11 +377,11 @@ int main() {
 
                     <h2>Table Of Content (Array Operations)</h2>
                     <ul>
-                        <a href="#length"><li>length</li></a>
-                         <a href="#insertion"><li>Insertion</li></a>
-                        <a href="#deletion"><li>Deletion</li></a>
-                        <a href="#sorting"><li>Sorting</li></a>
-                        <a href="#searching"><li>Searching</li></a>
+                        <li><a href="#length">length</a></li>
+                        <li><a href="#insertion">Insertion</a></li>
+                        <li><a href="#deletion">Deletion</a></li>
+                        <li><a href="#sorting">Sorting</a></li>
+                        <li><a href="#searching">Searching</a></li>
                     </ul>
                     <hr />
 
