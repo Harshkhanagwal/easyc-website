@@ -1,23 +1,18 @@
 import React, { useEffect } from 'react'
-
-import { useContext } from 'react';
-import { Globalcontext } from '../Context/Context';
+import Herosection from '../Components/Herosection/Herosection'
+import Whyus from '../Components/Whyus/Whyus'
+import Footer from '../Components/Footer/Footer'
 
 const Home = () => {
-
-
-    const { aside, SetAside } = useContext(Globalcontext);
-    useEffect(() => {
-        SetAside('hide')
-    }, [SetAside])
-
 
 
     return (
 
         <>
-            <div>Home</div>
-
+            <Herosection />
+            <Whyus/>
+            
+            <Footer/>
         </>
     )
 }

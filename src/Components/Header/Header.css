@@ -47,7 +47,7 @@ header {
         align-items: center;
         transition: ease 0.4s;
         background-color: #EBEBEF;
-        z-index: 99;
+        z-index: 99999;
     }
 
     .show{
