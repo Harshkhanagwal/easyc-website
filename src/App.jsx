@@ -14,6 +14,7 @@ import Linkedlist from './Pages/Subpages/Linkedlist';
 import NotFound from './Pages/NotFound';
 import About from './Pages/About';
 import Download from './Pages/Subpages/Download';
+import Installation from './Pages/Subpages/Installation';
 
 const App = () => {
 
@@ -33,6 +34,7 @@ const App = () => {
             <Route path='/guide/' element={<Overview />} />
             <Route path='/guide/overview' element={<Overview />} />
             <Route path='/guide/download' element={<Download />} />
+            <Route path='/guide/installation' element={<Installation />} />
             <Route path='/guide/array' element={<Array />} />
             <Route path='/guide/queue' element={<Queue />} />
             <Route path='/guide/Stack' element={<Stack />} />

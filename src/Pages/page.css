@@ -56,6 +56,9 @@ h1 {
     flex-direction: column;
     gap: 15px;
 }
+ol{
+    padding: 0 0 0 12px;
+}
 
 .steps_sec ol li {
     display: flex;
