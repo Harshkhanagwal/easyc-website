@@ -14,7 +14,7 @@ const Array = () => {
     int main() {
        
         char name[] = {'J','A','C', 'K'};
-        int size =  length_char(name);
+        int size =  sizeof(name)/sizeof(name[0]);
     
         printf("%d", size);
         return 0;
@@ -37,7 +37,7 @@ const Array = () => {
 int main() {
    
     char name[] = {'J','A','C', 'K'};
-    int size =  length_char(name);
+    int size =  sizeof(name)/sizeof(name[0]);
     
     printArr_char(name, size);
     
@@ -57,7 +57,7 @@ int main() {
 int main() {
    
     int arr[] = {1,2,3,4,5};
-    int size =  length_int(arr);
+    int size = sizeof(name)/sizeof(name[0]);
    
     int value = 0;
     
@@ -107,7 +107,7 @@ int main() {
 int main() {
        
     int arr[] = {1,2,3,4,5};
-    int size =  length_int(arr);
+    int size =  sizeof(arr)/sizeof(arr[0]);
        
     int value = 6;
         
@@ -157,7 +157,7 @@ int main() {
 int main() {
    
     int arr[] = {1,2,4,5};
-    int size =  length_int(arr);
+    int size =  sizeof(arr)/sizeof(arr[0]);
     int index = 2;
     int value = 3;
     
@@ -206,7 +206,7 @@ int main() {
 int main() {
    
     int arr[] = {1,2,3,4,5};
-    int size =  length_int(arr);
+    int size =  sizeof(arr)/sizeof(arr[0]);
        
     //this function also update the value of size variable with current size or length of array
     deleteFromBeginning_int(arr, &size);
@@ -248,7 +248,7 @@ int main() {
 int main() {
    
     int arr[] = {1,2,3,4,5};
-    int size =  length_int(arr);
+    int size =  sizeof(arr)/sizeof(arr[0]);
    
     //this function also update the value of size variable with current size or length of array
     deleteFromEnd_int(arr, &size);
@@ -288,7 +288,7 @@ int main() {
 int main() {
    
     int arr[] = {1,2,3,4,5};
-    int size =  length_int(arr);
+    int size =  sizeof(arr)/sizeof(arr[0]);
     int index = 0;
     
     //this function also update the value of size variable with current size or length of array
@@ -331,7 +331,7 @@ int main() {
 int main() {
    
     int arr[] = {1, 4, 2, 3, 6, 5};
-    int size =  length_char(arr);
+    int size =  sizeof(arr)/sizeof(arr[0]);
     
     sort_int(arr, size);
     
@@ -351,7 +351,7 @@ int main() {
     int arr[] = {23, 43, 5, 8, 9};
 	  
     //length function is also from easyC
-    int size = length_int(arr);
+    int size = sizeof(arr)/sizeof(arr[0]);
     
     // the search function will return the index of searched value
     int indexOfSearchedValue = search_int(arr, 5, size);
@@ -381,7 +381,6 @@ int main() {
 
                     <h2>Table Of Content (Array Operations)</h2>
                     <ul>
-                        <li><a href="#length">length</a></li>
                         <li><a href="#insertion">Insertion</a></li>
                         <li><a href="#deletion">Deletion</a></li>
                         <li><a href="#sorting">Sorting</a></li>
@@ -389,20 +388,7 @@ int main() {
                     </ul>
                     <hr />
 
-                    <h2 id='length'>Length</h2>
-                    <p>To find the length of array you have length function for each supported data types:</p>
-                    <ul>
-                        <li><Highlight value={"length_int()"} /> for int datatype</li>
-                        <li><Highlight value={"length_float()"} /> for float datatype</li>
-                        <li><Highlight value={"length_char()"} /> for char datatype</li>
-                    </ul>
-                    <br />
-                    <p>you just have to pass a single argument during function call, which is basically the array it self and it’ll return the length of the passed array <Highlight value={"return type : int"} /> </p>
-                    <br />
-                    <p>for example :</p>
-                    <Codebx code={length} />
-
-                    <hr />
+                    
 
                     <h2 id='print-array'>Print Array</h2>
                     <p>To find the  values of array you also have pre build function for each supported data types:</p>
@@ -414,7 +400,6 @@ int main() {
                     <br />
                     <p>you just have to pass a two argument during function call (1st: array itself , 2nd : length of array)</p>
                     <Codebx code={array_ex} />
-                    <p><i>Note: you can use easyC's length function for size of array</i></p>
                     <br />
                     <p>for example :</p>
                     <Codebx code={length_char} />
@@ -445,7 +430,6 @@ int main() {
                         <li>3rd: value to be added</li>
                     </ul>
                     <Codebx code={printArr_int} />
-                    <p><i>Note: you can use easyC's length function for size of array</i></p>
                     <br />
                     <p>for example:</p>
                     <Codebx code={length_int} />
@@ -507,7 +491,6 @@ int main() {
                         <li>4th : index where you want to add value</li>
                     </ul>
                     <Codebx code={index_ex} />
-                    <p><i>Note: you can use easyC’s length function for size of array</i></p>
                     <br />
                     <p>for example:</p>
                     <Codebx code={insertAtIndex_int} />
@@ -548,7 +531,6 @@ int main() {
                         <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the length of variable (example : <Highlight value={"&size"} />)</li>
                     </ul>
                     <Codebx code={delete_ex} />
-                    <p><i>Note: you can use easyC's length function for size of array</i></p>
                     <br />
                     <p>for example:</p>
                     <Codebx code={deleteFromBeginning_int} />
@@ -579,7 +561,7 @@ int main() {
                     <br />
 
                     <h3>Deletion from Index</h3>
-                    <p>unction for each supported data types:</p>
+                    <p>Function for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"deleteFromIndex_int()"} /> for int datatype</li>
                         <li><Highlight value={"deleteFromIndex_float"} /> for float datatype</li>
@@ -594,7 +576,6 @@ int main() {
                         <li>3rd : index of the position in the array from which you want to delete the value.</li>
                     </ul>
                     <Codebx code={del_index_ex} />
-                    <p><i>Note: you can use easyC’s length function for size of array</i></p>
                     <br />
 
                     <p>for example:</p>
@@ -652,7 +633,6 @@ int main() {
 
                     <p>for example:</p>
                     <Codebx code={search}></Codebx>
-                    <p><i>Note: you can use easyC’s length function for size of array</i></p>
 
 
 
