@@ -12,16 +12,16 @@ const hello =`#include <stdio.h>
 #include <easyC.h>
     
 int main() {
-	sayHii();
-  return 0;
+    sayHii();
+    return 0;
 }`;
 const hello2 =`#include <stdio.h>
 //must include easyc.h file
 #include "./easyc.h"
     
 int main() {
-	sayHii();
-  return 0;
+    sayHii();
+    return 0;
 }`;
 
 const Installation = () => {
@@ -49,7 +49,7 @@ const Installation = () => {
                     <Codebx code={hello}/>
                     <hr />
                     <h2>Installation for particular projects</h2>
-                    <p>Suitable for those programs, which you want to publish.</p>
+                    <p>Suitable for those programs, which you want to publish or upload somewhere.</p>
                     <br />
                     <p><b>Note : You must have installed “MinGW” or any other c compiler in your system & bin folder should be added in environment variable !</b></p>
                     <br />
@@ -57,7 +57,8 @@ const Installation = () => {
                     <ol>
                         <li>Unzip the downloaded zip file.</li>
                         <li><p>Copy <Highlight value="easyc.h"  /> file.</p></li>
-                        <li>Past it in same folder in which where your program file/files are stored <br />for example:</li>
+                        <li>Past it in same folder in which where your program file/files are stored</li>
+                        <li>To import easyc.h header file you can use <Highlight value={`./eascy.h`}></Highlight>, make sure that easyc header file is stored in same folder</li>
                         <li>Try Hello World program  with easyc.</li>
                     </ol>
                     <Codebx code={hello2}/>
