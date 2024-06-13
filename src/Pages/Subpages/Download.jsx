@@ -26,10 +26,15 @@ const Download = () => {
             <h2>Steps:</h2>
             <ol>
               <li>1. Click on download button {`(`} It will redirect you to github link of easy c llibrary{`)`}</li>
-              <li>2. Click on code button  <img src={DownloadStep1} alt="download step 1" /></li>
+              <li>2. Click on code button </li>
+              <div className="img-container">
+                <img src={DownloadStep1} alt="download step 1" />
+              </div>
               <li>3. Download it as a Zip file
-              <img src={DownloadStep2} alt="download step 2" /> 
               </li>
+              <div className="img-container">
+                <img src={DownloadStep2} alt="download step 2" />
+              </div>
             </ol>
             <p>For further instruction of installation follow the <Link to={"/guide/installation"}>Installation Guide</Link></p>
           </div>

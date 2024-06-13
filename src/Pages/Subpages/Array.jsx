@@ -6,8 +6,8 @@ import Aside from '../../Components/Aside/Aside';
 
 const Array = () => {
 
-    const length = 
-    `#include <stdio.h>
+    const length =
+        `#include <stdio.h>
 //must include easyc.h file
 #include <easyC.h>
     
@@ -366,8 +366,8 @@ int main() {
 
 
         <>
-         <Menubar />
-         <Aside />
+            <Menubar />
+            <Aside />
 
             <div className="container guide-container">
 
@@ -629,7 +629,7 @@ int main() {
                         <li>2nd : value to be searched</li>
                         <li>3rd : size of array</li>
                     </ul>
-                    <br/>
+                    <br />
 
                     <p>for example:</p>
                     <Codebx code={search}></Codebx>
