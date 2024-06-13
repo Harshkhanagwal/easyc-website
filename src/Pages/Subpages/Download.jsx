@@ -1,9 +1,11 @@
 import React from "react";
 import Menubar from "../../menubar/Menubar";
 import Aside from "../../Components/Aside/Aside";
-import { BsDisplay } from "react-icons/bs";
 import "../page.css";
 import { Link } from "react-router-dom";
+
+import DownloadStep1 from "../../assets/downloadStep_1.png";
+import DownloadStep2 from "../../assets/downloadStep_2.png";
 
 const Download = () => {
   return (
@@ -23,12 +25,13 @@ const Download = () => {
           <div className="steps_sec">
             <h2>Steps:</h2>
             <ol>
-              <li>1. Click on download button {`(`} It will redirect you to github link of easy c llibrary{`)`} <img src="" alt="" />
+              <li>1. Click on download button {`(`} It will redirect you to github link of easy c llibrary{`)`}</li>
+              <li>2. Click on code button  <img src={DownloadStep1} alt="download step 1" /></li>
+              <li>3. Download it as a Zip file
+              <img src={DownloadStep2} alt="download step 2" /> 
               </li>
-              <li>2. Click on code button</li>
-              <li>3. Download it as a Zip file</li>
             </ol>
-            <p>For further instruction of installation follow the <Link to={"/guide/installation"}>Installation Guide</Link></p><s></s>
+            <p>For further instruction of installation follow the <Link to={"/guide/installation"}>Installation Guide</Link></p>
           </div>
         </div>
       </div>
