@@ -1,6 +1,5 @@
 import React from 'react'
 import Home from './Pages/Home'
-import Aside from './Components/Aside/Aside'
 
 import { useContext } from 'react';
 import { Globalcontext } from './Context/Context';
@@ -14,9 +13,9 @@ import Stack from './Pages/Subpages/Stack';
 import Linkedlist from './Pages/Subpages/Linkedlist';
 import NotFound from './Pages/NotFound';
 import About from './Pages/About';
+import Download from './Pages/Subpages/Download';
 
 const App = () => {
-  const { aside } = useContext(Globalcontext);
 
   return (
     <>
@@ -33,6 +32,7 @@ const App = () => {
             <Route path='/about' element={<About />} />
             <Route path='/guide/' element={<Overview />} />
             <Route path='/guide/overview' element={<Overview />} />
+            <Route path='/guide/download' element={<Download />} />
             <Route path='/guide/array' element={<Array />} />
             <Route path='/guide/queue' element={<Queue />} />
             <Route path='/guide/Stack' element={<Stack />} />

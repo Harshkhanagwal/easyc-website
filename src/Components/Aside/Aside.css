@@ -82,3 +82,9 @@ aside {
     display: block;
   }
 } 
+
+/* @media screen and (min-width: 1550px) {
+  .header-logo{
+      opacity: 0;
+  }
+} */

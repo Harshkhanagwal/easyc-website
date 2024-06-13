@@ -2,9 +2,10 @@ footer{
     width: 100%;
     border-top: 1px solid #e3e3e3;
     margin-top: 20px;
-    padding: 20px 0;
+    padding: 20px 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     font-size: 12px;
     opacity: 0.8;

@@ -1,0 +1,57 @@
+
+.download-btn-area{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.download-btn-area p{
+    font-size: 16px;
+    line-height: 16px;
+    height: 40px;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.download_btn{
+    height: 40px;
+    width: 196px;
+    border: none;
+    cursor: pointer;
+    transition: ease 0.3s;
+    background-color: #EBEBEF;
+    color: #6c6c6c;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+
+.download_btn:hover {
+    background-color: #646CFF;
+    color: #fff;
+}
+
+hr{
+    width: 100%;
+}
+
+.steps_sec{
+    display: flex;
+    flex-direction: column;
+}
+.steps_sec h2{
+    font-size: 30px;
+}
+h1{
+    font-size: 36px;
+}
+.steps_sec ol li{
+    display: flex;
+    flex-direction: column;
+}
+
+.steps_sec ol{
+    list-style-type: decimal ;
+}

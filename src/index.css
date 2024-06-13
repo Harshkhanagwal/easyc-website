@@ -36,6 +36,7 @@ html {
   display: flex;
   flex-direction: column;
   padding: 50px 40px;
+  width: 100%;
 }
 
 .code-area {
