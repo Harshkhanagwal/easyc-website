@@ -9,7 +9,7 @@ const Stack = () => {
 
     const stack =
         ` int size = 5; // Size of the stack
- Stack_AR* myStack = createStack_LLR(size);`;
+ Stack_AR* myStack = createStack_AR(size);`;
 
     const push = `push_AR(myStack, 10);`;
 
@@ -17,7 +17,7 @@ const Stack = () => {
 
     const peek = `printf("Top element is %d", peek_AR(myStack));`;
 
-    const printStack = `printStack(myStack);`;
+    const printStack = `printStack_AR(myStack);`;
 
     const Stack_AR =
         `#include <stdio.h>
@@ -43,7 +43,7 @@ int main() {
 
     const Stack_LLR =
         ` int size = 5; // Size of the stack
- Stack_AR* myStack = createStack_LLR(size);`;
+ Stack_LLR* myStack = createStack_LLR(size);`;
 
     const push_LLR = `push_LLR(myStack, 10);`;
 

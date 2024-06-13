@@ -13,6 +13,7 @@ import Queue from './Pages/Subpages/Queue';
 import Stack from './Pages/Subpages/Stack';
 import Linkedlist from './Pages/Subpages/Linkedlist';
 import NotFound from './Pages/NotFound';
+import About from './Pages/About';
 
 const App = () => {
   const { aside } = useContext(Globalcontext);
@@ -29,6 +30,7 @@ const App = () => {
 
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
             <Route path='/guide/' element={<Overview />} />
             <Route path='/guide/overview' element={<Overview />} />
             <Route path='/guide/array' element={<Array />} />

@@ -202,39 +202,39 @@ LinkedList_C* head = initializeList_C();
           <h2>Single Linked List</h2>
           <p><b>List of operations:</b></p>
           <ul>
-            <li><a href="#L_S_insertion">Insertion</a></li>
-            <li><a href="">Deletion</a></li>
-            <li><a href="">Print linked list</a></li>
-            <li><a href="">Sort</a></li>
-            <li><a href="">Searching</a></li>
+            <li><a href="#insertion_in_singly_ll">Insertion</a></li>
+            <li><a href="#deletion_in_singly_ll">Deletion</a></li>
+            <li><a href="#print_ll">Print linked list</a></li>
+            <li><a href="#length_ll">Length</a></li>
+            <li><a href="#search_ll">Searching</a></li>
           </ul>
           <hr />
           <h3>Singly linked List Initialization</h3>
           <p>To initialize Singly linked list you can use  <Highlight value={`initializeList_S()`} /> function in variable with data type <Highlight value={`LinkedList_S*`} /> as given example:</p>
           <Codebx code={L_S_Initialization} />
           <hr />
-          <h3 id="L_S_insertion">Insertion in Singly Linked List</h3>
+          <h3 id="insertion_in_singly_ll">Insertion in Singly Linked List</h3>
           <ul>
-            <li><a href="#L_S_i_beginning">Insert at Beginning</a></li>
-            <li><a href="L_S_i_ending">Insert at End</a></li>
-            <li><a href="L_S_i_index">Insert at given position</a></li>
+            <li><a href="#single_ll_insert_beginning">Insert at Beginning</a></li>
+            <li><a href="#single_ll_insert_ending">Insert at End</a></li>
+            <li><a href="#single_ll_insert_index">Insert at given position</a></li>
           </ul>
 
-          <p id="L_S_i_beginning"><b>Insert at Beginning</b></p>
+          <p id="#single_ll_insert_beginning"><b>Insert at Beginning</b></p>
           <p>you can use <Highlight value={`insertAtBeginning_S()`} /> function to insert value at front of linked list or as first element this function will take two arguments:</p>
           <ul>
             <li><p>1st : address of head variable of LinkedList</p></li>
             <li><p>2nd : value to be inserted </p></li>
           </ul>
           <Codebx code={L_S_I_begin} />
-          <p id="L_S_i_ending"><b>Insert at End</b></p>
+          <p id="#single_ll_insert_ending"><b>Insert at End</b></p>
           <p>you can use <Highlight value={'`insertAtEnd_S()`'} />  function to insert value at end of linked list this function will take two arguments :</p>
           <ul>
             <li><p>1st : address of head variable of LinkedList</p></li>
             <li><p>2nd : value to be inserted </p></li>
           </ul>
           <Codebx code={L_S_I_end} />
-          <p id="L_S_i_index"><b>Insert at Given Index</b></p>
+          <p id="#single_ll_insert_index"><b>Insert at Given Index</b></p>
           <p>you can use <Highlight value={`insertAtIndex_S()`} /> function to insert value at given index of linked list this function will take three arguments</p>
           <ul>
             <li><p>1st : reference of head variable</p></li>
@@ -243,20 +243,20 @@ LinkedList_C* head = initializeList_C();
           </ul>
           <Codebx code={L_S_I_index} />
 
-          <h3>Deletion in Singly Linked list</h3>
+          <h3 id="deletion_in_singly_ll">Deletion in Singly Linked list</h3>
           <ul>
-            <li><a href="L_S_D_begin">Delete from Beginning</a></li>
-            <li><a href="L_S_D_End">Delete from End</a></li>
-            <li><a href="L_S_D_index">Deletion from given position</a></li>
+            <li><a href="#single_ll_delete_begin">Delete from Beginning</a></li>
+            <li><a href="#single_ll_delete_End">Delete from End</a></li>
+            <li><a href="#single_ll_delete_index">Deletion from given position</a></li>
           </ul>
 
-          <p id="L_S_D_begin"><b>Delete From Beginning</b></p>
+          <p id="single_ll_delete_begin"><b>Delete From Beginning</b></p>
           <p>you can use <Highlight value={`deleteFromBeginning_S()`} /> function to delete value from front of linked list </p>
           <Codebx code={L_S_D_begin} />
-          <p id="L_S_D_End"><b>Delete From End</b></p>
+          <p id="single_ll_delete_End"><b>Delete From End</b></p>
           <p>you can use <Highlight value={`deleteFromEnd_S()`} /> function to delete last value of linked list </p>
           <Codebx code={L_S_D_end} />
-          <p id="L_S_D_index"><b>Delete From Given Index</b></p>
+          <p id="single_ll_delete_index"><b>Delete From Given Index</b></p>
           <p>you can use <Highlight value={`deleteFromIndex_S()`} /> function to delete last value of linked list, this function with take two arguments</p>
           <ul>
             <li><p>1st : address of head node</p></li>
@@ -266,14 +266,14 @@ LinkedList_C* head = initializeList_C();
 
           <hr />
 
-          <h3>Print Linked List </h3>
+          <h3 id="print_ll">Print Linked List </h3>
           <p>To print Linked List you can simply use  <Highlight value={`printList_S()`} /> function</p>
           <Codebx code={L_S_print} />
           <hr />
-          <h3>Get Length of Singly Linked list</h3>
+          <h3 id="length_ll">Get Length of Singly Linked list</h3>
           <p>To gent Length of Singly Linked List you can use <Highlight value={`getLength_S()`} /> function</p>
           <Codebx code={L_S_length} />
-          <h3>Searching </h3>
+          <h3 id="search_ll">Searching </h3>
           <p>to search values in Singly linked list you can use <Highlight value={`search_S()`} /> function, this function will take two arguments:</p>
           <Codebx code={L_S_search} />
 
@@ -348,7 +348,7 @@ LinkedList_C* head = initializeList_C();
           <h3>Operations</h3>
           <p>syntax of operation functions on doubly linked list is same as singly linked list so you can directly use those functions without any issue</p>
           <p>here's the table representing all operations :</p>
-          {/*           
+        
           <div className="tableContainer">
             <table>
               <tr>
@@ -398,7 +398,7 @@ LinkedList_C* head = initializeList_C();
               </tr>
             </table>
           </div>
-           */}
+    
           <p>Code Example :</p>
           <Codebx code={L_C_ex} />
           <hr />

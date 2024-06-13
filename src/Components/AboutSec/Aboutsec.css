@@ -1,0 +1,101 @@
+.aboutpage{
+    flex-direction: column;
+}
+.about_sec{
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+padding-top: 50px;
+}
+.about_content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    width: 50%;
+}
+.about_sec img{
+    width:49%;
+}
+@media screen and (max-width:980px) {
+    .about_sec{
+        flex-direction: column-reverse;
+    }
+    .about_sec{
+        align-items: center;
+    }
+    .about_sec img{
+        width:65%;
+    }
+    .about_content{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .about_sec img{
+    width:75%;
+}
+    .about_content p{
+        text-align: justify;
+    }
+}
+.abs-main{
+    position: relative;
+    width: 100%;
+    background-color: #EBEBEF;
+    display: flex;
+    padding: 50px 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.our_team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.team_profiles{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    /* justify-content: space-between; */
+}
+.profile{
+    background-color: #646CFF;
+    text-align: center;
+    height: 360px;
+    width: 270px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.profile_info{
+    width:100%;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+}
+.profile_info span{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+.abs-main h2{
+    font-size: 36px;
+}
+.yasu{
+    background-size: cover;
+    background-position: center;
+}
+.about_content h2{
+    font-size: 36px;
+}
+.profile_info p{
+    font-size: 12px;
+}
