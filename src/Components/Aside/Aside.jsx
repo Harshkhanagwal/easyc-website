@@ -7,9 +7,11 @@ import { IoCloseSharp } from "react-icons/io5";
 
 const Aside = (props) => {
 
-    const { SetAsideMenu, asideMenu } = useContext(Globalcontext);
+    const { SetAsideMenu, asideMenu, SetLogo } = useContext(Globalcontext);
 
-   
+   useEffect(() => {
+    SetLogo(false)
+   }, SetLogo)
 
     return (
         <>

@@ -9,10 +9,11 @@ import Footer from '../Components/Footer/Footer';
 
 const NotFound = () => {
 
-    const { aside, SetAside } = useContext(Globalcontext);
+    const {SetLogo } = useContext(Globalcontext);
+
     useEffect(() => {
-        SetAside('hide')
-    }, [SetAside])
+        SetLogo(true)
+    }, SetLogo)
 
 
 

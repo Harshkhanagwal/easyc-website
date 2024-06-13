@@ -31,7 +31,9 @@ header {
     display: none;
 }
 
-
+.hide-logo{
+    opacity: 0;
+}
 
 @media screen and (max-width: 550px) {
 
