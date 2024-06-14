@@ -381,6 +381,7 @@ int main() {
 
                     <h2>Table Of Content (Array Operations)</h2>
                     <ul>
+                        <li><a href="#print-array">Print Array</a></li>
                         <li><a href="#insertion">Insertion</a></li>
                         <li><a href="#deletion">Deletion</a></li>
                         <li><a href="#sorting">Sorting</a></li>
@@ -391,7 +392,7 @@ int main() {
                     
 
                     <h2 id='print-array'>Print Array</h2>
-                    <p>To find the  values of array you also have pre build function for each supported data types:</p>
+                    <p>To Print the  values of array you also have pre build function for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"printArr_int()"} /> for int datatype</li>
                         <li><Highlight value={"printArr_float()"} /> for float datatype</li>
@@ -405,7 +406,7 @@ int main() {
                     <Codebx code={length_char} />
                     <hr />
 
-                    <h2 id='insertion'>Insertion </h2>
+                    <h2 id='insertion'>Insertion</h2>
                     <p>You can insert element in array with easyC in three ways: </p>
                     <ul>
                         <li>insert at beginning </li>
@@ -415,7 +416,7 @@ int main() {
                     <br />
 
                     <h3>Insert at beginning</h3>
-                    <p>function for each supported data types:</p>
+                    <p>Function for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"insertAtBeginning_int()"} /> for int datatype</li>
                         <li><Highlight value={"insertAtBeginning_float()"} /> for float datatype</li>
@@ -426,7 +427,7 @@ int main() {
                     <p>for <Highlight value={"int"} /> & <Highlight value={"float"} /> you have to pass three argument  during function call :</p>
                     <ul>
                         <li>1st: array itself </li>
-                        <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the length of variable(example : <Highlight value={"&size"} />)</li>
+                        <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the size of Array(example : <Highlight value={"&size"} />)</li>
                         <li>3rd: value to be added</li>
                     </ul>
                     <Codebx code={printArr_int} />
@@ -446,7 +447,7 @@ int main() {
                     <br />
 
                     <h3>Insert at end</h3>
-                    <p>function for each supported data types:</p>
+                    <p>Function for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"insertAtEnd_int()"} /> for int datatype</li>
                         <li><Highlight value={"insertAtEnd_float()"} /> for float datatype</li>
@@ -456,7 +457,7 @@ int main() {
                     <p>you have to pass three argument  during function call - </p>
                     <ul>
                         <li>1st: array itself </li>
-                        <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the length of variable (example : <Highlight value={"&size"} />)</li>
+                        <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the size of Array(example : <Highlight value={"&size"} />)</li>
                         <li>3rd: value to be added</li>
                     </ul>
                     <Codebx code={insertAtEnd_ex} />
@@ -476,7 +477,7 @@ int main() {
                     <br />
 
                     <h3>Insert at given Index</h3>
-                    <p>function for each supported data types:</p>
+                    <p>Function for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"insertAtIndex_int()"} /> for int datatype</li>
                         <li><Highlight value={"insertAtIndex_float()"} /> for float datatype</li>
@@ -518,7 +519,7 @@ int main() {
                     <br />
 
                     <h3>Deletion from beginning</h3>
-                    <p>function for each supported data types:</p>
+                    <p>Function for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"deleteFromBeginning_int()"} /> for int datatype</li>
                         <li><Highlight value={"deleteFromBeginning_float()"} /> for float datatype</li>
@@ -572,8 +573,8 @@ int main() {
                     <p>for <Highlight value={"char"} /> & <Highlight value={"float"} /> you have to pass two argument  during function call :</p>
                     <ul>
                         <li>1st: array itself </li>
-                        <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the length of variable ( example : <Highlight value={"&size"} />)</li>
-                        <li>3rd : index of the position in the array from which you want to delete the value.</li>
+                        <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the length of variable (example : <Highlight value={"&size"} />)</li>
+                        <li>3rd : Index of element to be deleted.</li>
                     </ul>
                     <Codebx code={del_index_ex} />
                     <br />
@@ -584,8 +585,8 @@ int main() {
 
                     <p>for <Highlight value={"char"} /> array  you  have to pass two argument:</p>
                     <ul>
-                        <li>1st : address of character array  </li>
-                        <li>2nd : index of the position in the array from which you want to delete the value.</li>
+                        <li>1st : Address of character array  </li>
+                        <li>2nd :  Index of element to be deleted.</li>
                     </ul>
                     <Codebx code={char_arr} />
                     <br />
@@ -594,7 +595,7 @@ int main() {
                     <Codebx code={deleteFromIndex_char} />
                     <hr />
 
-                    <h2 id='sorting'>sorting</h2>
+                    <h2 id='sorting'>Sorting</h2>
                     <p>To sort the array you have sort functions for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"sort_int()"} /> for int datatype</li>
@@ -603,7 +604,7 @@ int main() {
                     </ul>
                     <br />
 
-                    <p>you just have to pass three arguments during function call:</p>
+                    <p>you just have to pass two arguments during function call:</p>
                     <ul>
                         <li>1st : array itself</li>
                         <li>2nd : size of array </li>

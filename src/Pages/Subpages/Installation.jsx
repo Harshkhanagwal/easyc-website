@@ -43,7 +43,7 @@ const Installation = () => {
                     <ol>
                     <li><p>Unzip the downloaded zip file. </p></li>
                     <li><p>Copy <Highlight value="easyc.h"  /> file.</p></li>
-                    <li><p>Go to include fo lder  {`(`} which is added in environment variable {`)`} and paste it : {`(`} In most of the cases the path is : <Highlight value=" C:\MinGW\include"/> {`)`}.</p></li>
+                    <li><p>Go to include folder of MINGW Setup and paste it : {`(`} In most of the cases the location path of include folder is : <Highlight value=" C:\MinGW\include"/> {`)`}.</p></li>
                     <li><p>Try Hello World program  with easyc.</p></li>
                     </ol>
                     <Codebx code={hello}/>

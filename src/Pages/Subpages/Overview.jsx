@@ -3,6 +3,7 @@ import Calloutbx from '../../Components/Callout/Calloutbx'
 import { Globalcontext } from '../../Context/Context';
 import Menubar from '../../menubar/Menubar';
 import Aside from '../../Components/Aside/Aside';
+import { Link } from 'react-router-dom';
 
 const Overview = () => {
 
@@ -19,7 +20,7 @@ const Overview = () => {
 
                     <h2>Introduction</h2>
                     <p>
-                        Welcome to the EasyC guide !<b>This guide will introduce you to EasyC and teach you how to use it the right way.</b> It is a user friendly platform which is used to simplify the operations performed in our program.<br /><br />
+                        Welcome to the EasyC guide! <b>This guide will introduce you to EasyC and teach you how to use it the right way.</b> It is a user friendly platform which is used to simplify the operations performed in our program.<br /><br />
 
                         By the time you finish with this guide, you should be able to start building your own C language projects using EasyC.<br /><br />
 
@@ -43,6 +44,17 @@ const Overview = () => {
                         <li><b>Reduce code length</b> :  EasyC provide inbuild functions for many operations and tasks. So, you don’t need to make your code more lengthier for those functions.</li>
                         <li><b>Reduce human efforts</b>: With EasyC you can perform many operations directly from easyC.h's inbuild functions without putting efforts to make it from scratch.</li>
                         <li><b>Improve production speed</b>: It saves times by reducing the code length and also helps to code faster with our pre build functions and operations.</li>
+                    </ul>
+                    <hr />
+
+                    <h2>Docs Quick Links</h2>
+                    <ul>
+                        <li><Link to={'/guide/download'}>Download</Link></li>
+                        <li><Link to={'/guide/installation'}>Installation</Link></li>
+                        <li><Link to={'/guide/array'}>Array</Link></li>
+                        <li><Link to={'/guide/linkedlist'}>Linked List</Link></li>
+                        <li><Link to={'/guide/stack'}>Stack</Link></li>
+                        <li><Link to={'/guide/queue'}>Queue</Link></li>
                     </ul>
 
                 </div>

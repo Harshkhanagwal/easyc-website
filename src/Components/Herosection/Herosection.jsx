@@ -1,6 +1,7 @@
 import React from 'react'
 import './herosection.css'
 import Heroimg from '../../assets/heroImage.png'
+import { Link } from 'react-router-dom'
 
 const Herosection = () => {
     return (
@@ -12,8 +13,12 @@ const Herosection = () => {
                     </p>
                     <p className='heroSubHead'><b><span className="colored">EasyC</span></b> - A custom C library for for C programmers</p>
                     <div className="heroButtons">
-                        <button>Getting Started</button>
-                        <button className='downloadBT'>Download</button>
+                        <Link to={'/guide/overview'}>
+                            <button>Getting Started</button>
+                        </Link>
+                        <Link to={'/guide/download'}>
+                            <button className='downloadBT'>Download</button>
+                        </Link>
                     </div>
                 </div>
                 <div className="hero-img">

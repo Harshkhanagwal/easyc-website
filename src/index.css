@@ -213,7 +213,7 @@ hr {
     justify-content: center;
   }
   .content-area {
-    padding:50px  10px;
+    padding:70px  10px;
     max-width: calc(100% - 20px);
   }
   .content-area p{
@@ -227,8 +227,6 @@ hr {
     scale: 0.9;
   }
 
-  
-
 }
 
 .tableContainer{
@@ -238,12 +236,21 @@ hr {
 }
 
 table{
+  border-collapse: collapse;
   font-size: 14px;
+  background-color: #d8d8d8;
 }
+th{
+  background-color: #646CFF;
+  color: #fff;
 
+}
 td, th{
-  padding: 6px ;
-  border: 1px solid #67676C;
+  padding: 10px 6px ;
+  padding-right: 20px;
   text-wrap: nowrap;
 }
 
+tr:nth-of-type(2n){
+  background-color: #F6F6F7;
+}

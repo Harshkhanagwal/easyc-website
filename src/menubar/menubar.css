@@ -1,6 +1,6 @@
 .menubar-area {
-    height: 40px;
-    border-bottom: 1px solid #e3e3e3;
+    height: 60px;
+    border-bottom: 2px solid #e3e3e3;
     width: 100%;
     position: absolute;
     top: 70px;
@@ -15,8 +15,9 @@
     border: none;
     background-color: transparent;
     gap: 5px;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: underline dotted;
+
 }
 
 @media screen and (max-width: 984px) {

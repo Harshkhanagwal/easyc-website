@@ -35,8 +35,15 @@ header {
     opacity: 0;
 }
 
+@media screen and (max-width: 986px) {
+    .hide-logo{
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 550px) {
 
+   
     
     .headernav{
         display: flex;

@@ -7,7 +7,7 @@ import Menubar from '../../menubar/Menubar';
 
 const Linkedlist = () => {
 
- 
+
 
   const L_S_Initialization = `LinkedList_S* head = initializeList_S(); `;
   const L_S_I_begin = 'insertAtBeginning_S(&head, 43);';
@@ -86,37 +86,37 @@ int main() {
   insertAtBeginning_D(&head, 30);
   printList_D(head);
 
-  printf("\nInserting element at the end (40):\n");
+  printf("\\nInserting element at the end (40):\\n");
   insertAtEnd_D(&head, 40);
   printList_D(head);
 
-  printf("\nInserting element at index 2 (50):\n");
+  printf("\\nInserting element at index 2 (50):\\n");
   insertAtIndex_D(&head, 50, 2);
   printList_D(head);
 
-  printf("\nDeleting element from the beginning: \ n");
+  printf("\\nDeleting element from the beginning: \\n");
   deleteAtBeginning_D(&head);
   printList_D(head);
 
-  printf("\nDeleting element from the end:\n");
+  printf("\\nDeleting element from the end:\\n");
   deleteAtEnd_D(&head);
   printList_D(head);
 
-  printf("\nDeleting element from index 1:\n");
+  printf("\\nDeleting element from index 1:\\n");
   deleteAtIndex_D(&head, 1);
   printList_D(head);
 
-  printf("\nSearching for element 20:\n");
+  printf("\\nSearching for element 20:\\n");
   if (search_D(head, 20))
-    printf("Element 20 found in the list.\n");
+    printf("Element 20 found in the list.\\n");
   else
-    printf("Element 20 not found in the list.\n");
+    printf("Element 20 not found in the list.\\n");
 
-  printf("\nSearching for element 50:\n");
+  printf("\\nSearching for element 50:\\n");
   if (search_D(head, 50))
-    printf("Element 50 found in the list.\n");
+    printf("Element 50 found in the list.\\n");
   else
-    printf("Element 50 not found in the list.\n");
+    printf("Element 50 not found in the list.\\n");
 
     return 0;
 }`;
@@ -127,41 +127,41 @@ int main() {
 
 
 int main() { 
-LinkedList_C* head = initializeList_C();
+  LinkedList_C* head = initializeList_C();
 
-  printf("Inserting elements at the beginning:\n");
+  printf("Inserting elements at the beginning:\\n");
   insertAtBeginning_C(&head, 10);
   insertAtBeginning_C(&head, 20);
   insertAtBeginning_C(&head, 30);
   printList_C(head);
 
-  printf("\nInserting element at the end (40):\n");
+  printf("\\nInserting element at the end (40):\\n");
   insertAtEnd_C(&head, 40);
   printList_C(head);
 
-  printf("\nInserting element at index 2 (50):\n");
+  printf("\\nInserting element at index 2 (50):\\n");
   insertAtIndex_C(&head, 50, 2);
   printList_C(head);
 
-  printf("\nDeleting element from the beginning:\n");
+  printf("\\nDeleting element from the beginning:\\n");
   deleteAtBeginning_C(&head);
   printList_C(head);
 
-  printf("\nDeleting element from the end:\n");
+  printf("\\nDeleting element from the end:\\n");
   deleteAtEnd_C(&head);
   printList_C(head);
 
-  printf("\nSearching for element 20:\n");
+  printf("\\nSearching for element 20:\\n");
   if (search_C(head, 20))
-    printf("Element 20 found in the list.\n");
+    printf("Element 20 found in the list.\\n");
   else
-    printf("Element 20 not found in the list.\n");
+    printf("Element 20 not found in the list.\\n");
 
-  printf("\nSearching for element 50:\n");
+  printf("\\nSearching for element 50:\\n");
   if (search_C(head, 50))
-    printf("Element 50 found in the list.\n");
+    printf("Element 50 found in the list.\\n");
   else
-    printf("Element 50 not found in the list.\n");
+    printf("Element 50 not found in the list.\\n");
 
     return 0;
 }`;
@@ -182,8 +182,8 @@ LinkedList_C* head = initializeList_C();
   return (
 
     <>
-   <Menubar />
-   <Aside />
+      <Menubar />
+      <Aside />
       <div className="container guide-container">
 
         <div className="content-area">
@@ -348,7 +348,7 @@ LinkedList_C* head = initializeList_C();
           <h3>Operations</h3>
           <p>syntax of operation functions on doubly linked list is same as singly linked list so you can directly use those functions without any issue</p>
           <p>here's the table representing all operations :</p>
-        
+
           <div className="tableContainer">
             <table>
               <tr>
@@ -398,7 +398,7 @@ LinkedList_C* head = initializeList_C();
               </tr>
             </table>
           </div>
-    
+
           <p>Code Example :</p>
           <Codebx code={L_C_ex} />
           <hr />
