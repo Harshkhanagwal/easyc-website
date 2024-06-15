@@ -57,12 +57,12 @@ int main() {
 int main() {
    
     int arr[] = {1,2,3,4,5};
-    int size = sizeof(name)/sizeof(name[0]);
+    int size = sizeof(arr)/sizeof(arr[0]);
    
     int value = 0;
     
     //this function also update the value of size variable with current size or length of array
-    insertAtBeginning_int(arr, size, value);
+    insertAtBeginning_int(arr, &size, value);
     
     //easyc print function 
     printArr_int(arr, size);
@@ -112,7 +112,7 @@ int main() {
     int value = 6;
         
     //this function also update the value of size variable with current size or length of array
-    insertAtEnd_int(arr, size, value);
+    insertAtEnd_int(arr, &size, value);
         
     //easyc print function 
     printArr_int(arr, size);
