@@ -1,46 +1,55 @@
-.aboutpage{
+.aboutpage {
     flex-direction: column;
 }
-.about_sec{
+
+.about_sec {
     display: flex;
     width: 100%;
     display: flex;
     flex-direction: row;
-padding-top: 50px;
+    padding-top: 50px;
 }
-.about_content{
+
+.about_content {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
     width: 50%;
 }
-.about_sec img{
-    width:49%;
+
+.about_sec img {
+    width: 49%;
 }
+
 @media screen and (max-width:980px) {
-    .about_sec{
+    .about_sec {
         flex-direction: column-reverse;
     }
-    .about_sec{
+
+    .about_sec {
         align-items: center;
     }
-    .about_sec img{
-        width:65%;
+
+    .about_sec img {
+        width: 65%;
     }
-    .about_content{
+
+    .about_content {
         width: 85%;
     }
 }
 
 @media screen and (max-width:480px) {
-    .about_sec img{
-    width:75%;
-}
-    .about_content p{
+    .about_sec img {
+        width: 75%;
+    }
+
+    .about_content p {
         text-align: justify;
     }
 }
-.abs-main{
+
+.abs-main {
     position: relative;
     width: 100%;
     background-color: #EBEBEF;
@@ -50,22 +59,25 @@ padding-top: 50px;
     align-items: center;
     margin-top: 50px;
 }
-.our_team{
+
+.our_team {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.team_profiles{
-    width:100%;
+
+.team_profiles {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:20px;
+    gap: 20px;
     /* justify-content: space-between; */
 }
-.profile{
+
+.profile {
     background-color: #646CFF;
     text-align: center;
     height: 360px;
@@ -73,40 +85,50 @@ padding-top: 50px;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
+    background-position: center;
+    background-size: cover;
 }
-.profile_info{
-    width:100%;
+
+.profile_info {
+    width: 100%;
     padding: 10px 0;
     position: absolute;
     bottom: 0;
     background-color: #fff;
     background-position: center;
 }
-.profile_info span{
+
+.profile_info span {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
 }
-.abs-main h2{
+
+.abs-main h2 {
     font-size: 36px;
 }
 
-.about_content h2{
+.about_content h2 {
     font-size: 36px;
 }
-.profile_info p{
+
+.profile_info p {
     font-size: 12px;
 }
-.harsh{
-background-image: url();
-}
-.priyanshu{
-background-image: url();
-}
-.ayush{
-background-image: url();
-}
-.lalita{
-background-image: url();
+
+.harsh {
+    background-image: url('/public/harsh.jpg');
 }
 
+.priyanshu {
+    background-image: url('/public/priyanshu.jpg');
+}
+
+.ayush {
+    background-image: url('/public/ayush2.jpg');
+}
+
+.lalita {
+    background-image: url('/public/lalita.jpg');
+
+}

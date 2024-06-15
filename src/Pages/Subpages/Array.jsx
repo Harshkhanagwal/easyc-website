@@ -23,7 +23,7 @@ const Array = () => {
 
     const array_ex =
         `// example : 
-// printArr_int(arr, sizeOfarray)
+printArr_int(arr, sizeOfarray);
 `;
 
     const length_char =
@@ -47,7 +47,7 @@ int main() {
 
     const printArr_int =
         `// example : 
-// insertAtBeginning_int(arr, &sizeOfarray, value_to_be_added)`;
+insertAtBeginning_chr(arr, &sizeOfarray, value_to_be_added);`;
 
     const length_int = `
 #include <stdio.h>
@@ -71,33 +71,9 @@ int main() {
 }   
     `;
 
-    const character_array =
-        `// example : 
-// insertAtEnd_char(character_array,  character_to_be_added)`;
-
-    const insertAtBeginning_char =
-        `#include <stdio.h>
-//must include easyc.h file
-#include <easyC.h>
-
-//alawys use while working with characters or strings
-#include <string.h>
-
-int main() {
-   
-    char chrArr[] = {'a', 'b', 'c', 'd'};
-
-    char chrr = '@';
-    
-    insertAtBeginning_char(chrArr, chrr);
-    
-    return 0;
-    
-}`;
-
     const insertAtEnd_ex =
         `// example : 
-// insertAtEnd_int(arr, &sizeOfarray, value_to_be_added)`;
+insertAtEnd_int(arr, &sizeOfarray, value_to_be_added)`;
 
     const insertAtEnd_int =
         `#include <stdio.h>
@@ -120,39 +96,10 @@ int main() {
         
 }`;
 
-    const end_char_ex =
-        `// example : 
-// insertAtEnd_char(&address_of_character_array,  character_to_be_added)`;
-
-    const chrr =
-        `#include <stdio.h>
-//must include easyc.h file
-#include <easyC.h>
-
-//alawys use while working with characters or strings
-#include <string.h>
-
-int main() {
-   
-    char chrArr[] = {'a', 'b', 'c', 'd'};
-
-    char chrr = 'e';
-    int size =  sizeof(chrArr)/sizeof(chrArr[0]) ;
-    
-    //this function also update the value of size variable with current size or length of array
-    insertAtEnd_char(chrArr, &size ,chrr);
-
-    printArr_char(chrArr, size);
-    
-    return 0;
-    
-    
-}`;
-
 
     const index_ex =
         `// example : 
-// insertAtEnd_int(&arr, &sizeOfarray, value_to_be_added, index_where_to_add_value)`;
+insertAtEnd_int(&arr, &sizeOfarray, value_to_be_added, index_where_to_add_value);`;
 
     const insertAtIndex_int =
         `#include <stdio.h>
@@ -220,7 +167,7 @@ int main() {
 
     const del_index_ex =
         `// example : 
-// deleteFromIndex_int(arr, &sizeOfarray, index)`;
+deleteFromIndex_int(arr, &sizeOfarray, index);`;
 
     const deleteFromIndex_int =
         `#include <stdio.h>
@@ -244,7 +191,7 @@ int main() {
 
     const char_arr =
         `// example : 
-// deleteFromBeginning_char(character_array, index)`;
+deleteFromBeginning_char(character_array, index);`;
 
     const deleteFromIndex_char =
         `#include <stdio.h>
@@ -301,9 +248,7 @@ int main() {
     int indexOfSearchedValue = search_int(arr, 5, size);
     
     return 0;
-}
-    
-    `;
+}`;
 
 
     return (
@@ -368,7 +313,7 @@ int main() {
                     </ul>
                     <br />
 
-                    <p>for <Highlight value={"int"} /> & <Highlight value={"float"} /> you have to pass three argument  during function call :</p>
+                    <p>To insert at beginning yo,u have to pass three argument  during function call :</p>
                     <ul>
                         <li>1st: array itself </li>
                         <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the size of Array(example : <Highlight value={"&size"} />)</li>
@@ -378,16 +323,6 @@ int main() {
                     <br />
                     <p>for example:</p>
                     <Codebx code={length_int} />
-                    <br />
-                    <p>for <Highlight value={"char"} /> array  you have to pass two argument  during function call:</p>
-                    <ul>
-                        <li>1st: character array itself</li>
-                        <li>2nd : character to be inserted</li>
-                    </ul>
-                    <Codebx code={character_array} />
-                    <br />
-                    <p>for example:</p>
-                    <Codebx code={insertAtBeginning_char} />
                     <br />
 
                     <h3>Insert at end</h3>
@@ -415,7 +350,7 @@ int main() {
                     <ul>
                         <li><Highlight value={"insertAtIndex_int()"} /> for int datatype</li>
                         <li><Highlight value={"insertAtIndex_float()"} /> for float datatype</li>
-                        <li><Highlight value={"insertAtIndex_char"} /> for char datatype</li>
+                        <li><Highlight value={"insertAtIndex_char()"} /> for char datatype</li>
                     </ul>
                     <br />
                     <p>you have to pass four argument  during function call - </p>
@@ -449,7 +384,7 @@ int main() {
                         <li><Highlight value={"deleteFromBeginning_char()"} /> for char datatype</li>
                     </ul>
                     <br />
-                    <p>for <Highlight value={"int"} /> & <Highlight value={"float"} /> you have to pass two argument  during function call :</p>
+                    <p>You have to pass two argument  during function call :</p>
                     <ul>
                         <li>1st: array itself </li>
                         <li>2nd : this is an pointer based argument so you need to pass address of variable which is holding the length of variable (example : <Highlight value={"&size"} />)</li>

@@ -7,28 +7,29 @@ const Team = () => {
         <div className="container our_team">
           <h2>Our Team</h2>
           <div className="team_profiles">
-            <div className="profile">
-              <div className="profile_info harsh">
+            <div className="profile harsh">
+              <div className="profile_info ">
                 <span>Harsh Khanagwal</span>
                 <p>Developer & Founder</p>
               </div>
             </div>
-            <div className="profile">
-              <div className="profile_info priyanshu">
+
+            <div className="profile priyanshu">
+              <div className="profile_info">
                 <span>Priyanshu</span>
                 <p>Developer & Co-Founder</p>
               </div>
             </div>
 
-            <div className="profile">
-              <div className="profile_info lalita">
+            <div className="profile lalita">
+              <div className="profile_info">
               <span>Lalita</span>
               <p>Developer & Co-Founder</p>
               </div>
             </div>
-            <div className="profile">
-              <div className="profile_info ayush">
-              <span> Unknown</span>
+            <div className="profile ayush">
+              <div className="profile_info">
+              <span>Ayush</span>
               <p>Quality Assurance/Test engineer</p>
               </div>
             </div>
