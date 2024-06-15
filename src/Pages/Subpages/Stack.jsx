@@ -35,7 +35,7 @@ int main() {
       
     pop_AR(stack);
    
-    printStack(stack);
+    printStack_AR(stack);
     printf("Top element is %d", peek_AR(stack));
    
     return 0;

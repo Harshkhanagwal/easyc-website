@@ -137,10 +137,15 @@ int main() {
     char chrArr[] = {'a', 'b', 'c', 'd'};
 
     char chrr = 'e';
+    int size =  sizeof(chrArr)/sizeof(chrArr[0]) ;
     
-    insertAtEnd_char(&chrArr, chrr);
+    //this function also update the value of size variable with current size or length of array
+    insertAtEnd_char(chrArr, &size ,chrr);
+
+    printArr_char(chrArr, size);
     
     return 0;
+    
     
 }`;
 
@@ -162,34 +167,10 @@ int main() {
     int value = 3;
     
     //this function also update the value of size variable with current size or length of array
-    insertAtIndex_int(&arr, &size, value, index);
+    insertAtIndex_int(arr, &size, value, index);
     
     //easyc print function 
     printArr_int(arr, size);
-    return 0;
-    
-}`;
-
-    const char_ex =
-        `// example : 
-// insertAtEnd_char(&address_of_character_array,  character_to_be_added)`;
-
-    const end_char =
-        `#include <stdio.h>
-//must include easyc.h file
-#include <easyC.h>
-
-//alawys use while working with characters or strings
-#include <string.h>
-
-int main() {
-   
-    char chrArr[] = {'a', 'b', 'c', 'd'};
-
-    char chrr = 'e';
-    
-    insertAtEnd_char(&chrArr, chrr);
-    
     return 0;
     
 }`;
@@ -217,29 +198,6 @@ int main() {
     
 }`;
 
-    const delete_char_ex =
-        `// example : 
-// deleteFromBeginning_char(&character_array)`;
-
-    const deleteFromBeginning_char =
-        `#include <stdio.h>
-//must include easyc.h file
-#include <easyC.h>
-
-//alawys use while working with characters or strings
-#include <string.h>
-
-int main() {
-   
-    char chrArr[] = {'a', 'b', 'c', 'd'};
-
-    
-    deleteFromBeginning_char(chrArr);
-    
-    return 0;
-    
-}`;
-
     const deleteFromEnd_int =
         `#include <stdio.h>
 //must include easyc.h file
@@ -259,22 +217,6 @@ int main() {
     
 }`;
 
-    const deleteFromEnd_char =
-        `#include <stdio.h>
-//must include easyc.h file
-#include <easyC.h>
-
-//alawys use while working with characters or strings
-#include <string.h>
-
-int main() {
-   
-    char chrArr[] = {'a', 'b', 'c', 'd'};    
-    deleteFromEnd_char(&chrArr);
-    
-    return 0;
-    
-}`;
 
     const del_index_ex =
         `// example : 
@@ -302,7 +244,7 @@ int main() {
 
     const char_arr =
         `// example : 
-// deleteFromBeginning_char(&character_array, index)`;
+// deleteFromBeginning_char(character_array, index)`;
 
     const deleteFromIndex_char =
         `#include <stdio.h>
@@ -317,8 +259,10 @@ int main() {
     char chrArr[] = {'a', 'b', 'c', 'd'};
     int index = 0;
     
-    deleteFromIndex_char(&chrArr, index);
-    
+    deleteFromIndex_char(chrArr, index);
+
+    int size = sizeof(chrArr)/ sizeof(chrArr[0]);
+    printArr_char(chrArr, size );
     return 0;
     
 }`;
@@ -389,7 +333,7 @@ int main() {
                     </ul>
                     <hr />
 
-                    
+
 
                     <h2 id='print-array'>Print Array</h2>
                     <p>To Print the  values of array you also have pre build function for each supported data types:</p>
@@ -464,16 +408,6 @@ int main() {
                     <p>for example:</p>
                     <Codebx code={insertAtEnd_int} />
                     <br />
-
-                    <p>for <Highlight value={"char"} /> array  you have to pass two argument  during function call :</p>
-                    <ul>
-                        <li>1st: address of character array <Highlight value={"&chr"} /></li>
-                        <li>2nd : character to be inserted </li>
-                    </ul>
-                    <Codebx code={end_char_ex} />
-                    <br />
-                    <p>for example:</p>
-                    <Codebx code={chrr} />
                     <br />
 
                     <h3>Insert at given Index</h3>
@@ -495,18 +429,7 @@ int main() {
                     <br />
                     <p>for example:</p>
                     <Codebx code={insertAtIndex_int} />
-                    <br />
-
-                    <p>for <Highlight value={"char"} /> array  you have to pass three argument  during function call :</p>
-                    <ul>
-                        <li>1st : address of character array <Highlight value={"&chr"} /></li>
-                        <li>2nd : character to be inserted </li>
-                        <li>3rd :  index where you want to add value</li>
-                    </ul>
-                    <Codebx code={char_ex} />
-                    <br />
-                    <p>for example:</p>
-                    <Codebx code={end_char} />
+                    
                     <hr />
 
                     <h2 id='deletion'>Deletion</h2>
@@ -535,12 +458,7 @@ int main() {
                     <br />
                     <p>for example:</p>
                     <Codebx code={deleteFromBeginning_int} />
-                    <br />
-                    <p>for <Highlight value={"char"} /> array  you just have to pass single argument, address of character array  </p>
-                    <Codebx code={delete_char_ex} />
-                    <br />
-                    <p>for example:</p>
-                    <Codebx code={deleteFromBeginning_char} />
+
                     <br />
                     <h3>Deletion from end</h3>
                     <p>function for each supported data types:</p>
@@ -557,16 +475,12 @@ int main() {
                     <Codebx code={deleteFromEnd_int} />
                     <br />
 
-                    <p>for <Highlight value={"char"} /></p>
-                    <Codebx code={deleteFromEnd_char} />
-                    <br />
-
                     <h3>Deletion from Index</h3>
                     <p>Function for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"deleteFromIndex_int()"} /> for int datatype</li>
-                        <li><Highlight value={"deleteFromIndex_float"} /> for float datatype</li>
-                        <li><Highlight value={"deleteFromIndex_char"} /> for  char datatype</li>
+                        <li><Highlight value={"deleteFromIndex_float()"} /> for float datatype</li>
+                        <li><Highlight value={"deleteFromIndex_char()"} /> for  char datatype</li>
                     </ul>
                     <br />
 
@@ -585,7 +499,7 @@ int main() {
 
                     <p>for <Highlight value={"char"} /> array  you  have to pass two argument:</p>
                     <ul>
-                        <li>1st : Address of character array  </li>
+                        <li>1st : Character array itself</li>
                         <li>2nd :  Index of element to be deleted.</li>
                     </ul>
                     <Codebx code={char_arr} />
@@ -599,7 +513,7 @@ int main() {
                     <p>To sort the array you have sort functions for each supported data types:</p>
                     <ul>
                         <li><Highlight value={"sort_int()"} /> for int datatype</li>
-                        <li><Highlight value={"dort_float()"} /> for float datatype</li>
+                        <li><Highlight value={"sort_float()"} /> for float datatype</li>
                         <li><Highlight value={"sort_char()"} /> for char datatype</li>
                     </ul>
                     <br />
