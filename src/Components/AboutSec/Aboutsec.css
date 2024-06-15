@@ -80,6 +80,7 @@ padding-top: 50px;
     position: absolute;
     bottom: 0;
     background-color: #fff;
+    background-position: center;
 }
 .profile_info span{
     font-weight: bold;
@@ -89,13 +90,23 @@ padding-top: 50px;
 .abs-main h2{
     font-size: 36px;
 }
-.yasu{
-    background-size: cover;
-    background-position: center;
-}
+
 .about_content h2{
     font-size: 36px;
 }
 .profile_info p{
     font-size: 12px;
 }
+.harsh{
+background-image: url();
+}
+.priyanshu{
+background-image: url();
+}
+.ayush{
+background-image: url();
+}
+.lalita{
+background-image: url();
+}
+
