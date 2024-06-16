@@ -368,7 +368,7 @@ int main() {
                     <hr />
 
                     <h2 id='deletion'>Deletion</h2>
-                    <p>You can insert element in array with easyC in three ways: </p>
+                    <p>You can delete element from array with easyC in three ways: </p>
                     <ul>
                         <li>Deletion from beginning </li>
                         <li>Deletion from end</li>

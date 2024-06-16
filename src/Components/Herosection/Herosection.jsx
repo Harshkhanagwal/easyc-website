@@ -11,7 +11,7 @@ const Herosection = () => {
                     <p className="heroText">
                         let your efforts to be Easy <span className='lighter'>with</span> <span className='colored'> EasyC</span>
                     </p>
-                    <p className='heroSubHead'><b><span className="colored">EasyC</span></b> - A custom C library for for C programmers</p>
+                    <p className='heroSubHead'><b><span className="colored">EasyC</span></b> - A custom C library for C programmers</p>
                     <div className="heroButtons">
                         <Link to={'/guide/overview'}>
                             <button>Getting Started</button>
