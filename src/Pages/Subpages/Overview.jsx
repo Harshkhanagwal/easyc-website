@@ -49,16 +49,28 @@ const Overview = () => {
 
                     <h2>Docs Quick Links</h2>
                     <ul>
-                        <li><Link to={'/guide/download'}>Download</Link></li>
-                        <li><Link to={'/guide/installation'}>Installation</Link></li>
-                        <li><Link to={'/guide/array'}>Array</Link></li>
-                        <li><Link to={'/guide/linkedlist'}>Linked List</Link></li>
-                        <li><Link to={'/guide/stack'}>Stack</Link></li>
-                        <li><Link to={'/guide/queue'}>Queue</Link></li>
+                        <li onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}><Link to={'/guide/download'}>Download</Link></li>
+                        <li onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}><Link to={'/guide/installation'}>Installation</Link></li>
+                        <li onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}><Link to={'/guide/array'}>Array</Link></li>
+                        <li onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}><Link to={'/guide/linkedlist'}>Linked List</Link></li>
+                        <li onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}><Link to={'/guide/stack'}>Stack</Link></li>
+                        <li onClick={() => {
+                            window.scrollTo(0, 0)
+                        }}><Link to={'/guide/queue'}>Queue</Link></li>
                     </ul>
 
                 </div>
-            </div>
+            </div >
 
         </>
     )

@@ -51,7 +51,6 @@ h1 {
 
 .steps_sec ol {
     position: relative;
-    top: -15px;
     display: flex;
     flex-direction: column;
 }
